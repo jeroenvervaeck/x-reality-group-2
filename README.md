@@ -1,10 +1,11 @@
 # X Reality Group 2
 
 - Jeroen Vervaeck
-- Morgane Bekaeck
+- Morgane Bekaert
 - Yentel De Hauwere
-- 
-- todo add names
+- Indy Meermans
+- Jonas Stasseyns
+- Ruben Maesfranckx
 
 ## Installation
 
