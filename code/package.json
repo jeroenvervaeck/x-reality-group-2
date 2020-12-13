@@ -1,0 +1,41 @@
+{
+  "name": "x-reality",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "remove-docs": "rmdir /s /q docs || rm -r -f docs",
+    "build": "react-scripts build && move build docs || mv build docs",
+    "start": "react-scripts start"
+  },
+  "author": "Jeroen Vervaeck",
+  "license": "ISC",
+  "dependencies": {
+    "@react-three/cannon": "^0.5.3",
+    "@react-three/drei": "^2.2.7",
+    "@react-three/flex": "^0.5.2",
+    "@react-three/postprocessing": "^1.5.0",
+    "d3-ease": "^2.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.1",
+    "react-spring": "^8.0.27",
+    "react-three-fiber": "^5.3.3",
+    "react-three-gui": "^0.4.2",
+    "three": "^0.122.0",
+    "wouter": "^2.5.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "/x-reality-group-2"
+}
