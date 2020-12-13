@@ -20,9 +20,9 @@ Olivier Parent - Extended Reality
 
 ## Run locally
 
-navigate to the code folder
+navigate to the `code` folder
 
-    $ npm start
+    $ npm run start
 
 ## Adding your own functionality
 
