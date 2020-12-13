@@ -1,6 +1,8 @@
 # X Reality Group 2 - Present
 
-Artevelde Hogeschool - 3 MMP NMD - Olivier Parent
+Artevelde Hogeschool - 3 MMP NMD
+
+Olivier Parent - Extended Reality
 
 ### Group 2: 
 - Jeroen Vervaeck
