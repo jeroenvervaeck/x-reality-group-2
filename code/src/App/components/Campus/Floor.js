@@ -8,14 +8,16 @@ export default (props) => {
   const args = [PLANE_SIZE, PLANE_SIZE];
   const mass = 0; // kg
   const rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const position = [0, -3, 0 ]
   const [ref] = usePlane(() => ({
     ...props,
     mass,
     rotation,
+    position,
   }));
 
   return (
-    <Plane args={args} ref={ref}>
+    <Plane args={args} ref={ref} >
       <meshBasicMaterial color={0x666666} side={THREE.DoubleSide} />
     </Plane>
   );

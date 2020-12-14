@@ -20,10 +20,10 @@ export default () => {
       <Physics gravity={gravity}>
 
         <Player />
-        { false && <Stairs />}
+        { true && <Stairs />}
         { true && <Floor />}
 
-        <Campus />
+        { true && <Campus />}
         <Lighting />
 
         { false && <Assets />}
