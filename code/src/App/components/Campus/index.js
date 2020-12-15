@@ -2,8 +2,9 @@ import React from "react";
 import { Physics } from "@react-three/cannon";
 
 import Player from "./Player";
-import Floor from "./Floor";
-import Stairs from "./Stairs";
+import Base from "./Base";
+import Collision_floor from "./Collision_floor";
+import Collision_wall from "./Collision_wall";
 
 import Campus from "./Campus";
 import Lighting from "./Lighting";
@@ -20,13 +21,15 @@ export default () => {
       <Physics gravity={gravity}>
 
         <Player />
-        { true && <Stairs />}
-        { true && <Floor />}
+        
+        { true && <Collision_floor />}
+        { true && <Collision_wall />}
 
         { true && <Campus />}
-        <Lighting />
+        { true && <Lighting />}
+        { true && <Base />}
 
-        { false && <Assets />}
+        { true && <Assets />}
 
       </Physics>
     </>
