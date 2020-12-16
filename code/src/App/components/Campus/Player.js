@@ -7,13 +7,8 @@ import { KeyboardControls } from "App/lib";
 
 const BOX_SIZE = 0.5; // m
 const VELOCITY = {
-<<<<<<< HEAD
-  FORWARD_DIRECTION: 10,
-  RIGHT_DIRECTION: 5,
-=======
   FORWARD_DIRECTION: 3,
   RIGHT_DIRECTION: 3,
->>>>>>> 36a705216e0c11bd76c332b0be04791cd510892e
 };
 
 export default (props) => {
