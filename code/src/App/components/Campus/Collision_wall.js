@@ -319,14 +319,6 @@ export default (props) => {
     rotation: interiorWall_BS_lokaal_5_rotation,
     position: interiorWall_BS_lokaal_5_position,
   }));
-  const interiorWall_BS_lokaal_6_args = [5, 0.2, 3];
-  const interiorWall_BS_lokaal_6_position = [10.7, 4, -7.5];
-  const interiorWall_BS_lokaal_6_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
-  const [interiorWall_BS_lokaal_6_ref] = useBox(() => ({ ...props, mass,
-    args: interiorWall_BS_lokaal_6_args,
-    rotation: interiorWall_BS_lokaal_6_rotation,
-    position: interiorWall_BS_lokaal_6_position,
-  }));
 
   return (
     <group> 
@@ -447,9 +439,6 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={interiorWall_BS_lokaal_5_args} ref={interiorWall_BS_lokaal_5_ref} >
-        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
-      </Box>
-      <Box args={interiorWall_BS_lokaal_6_args} ref={interiorWall_BS_lokaal_6_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
     </group>
