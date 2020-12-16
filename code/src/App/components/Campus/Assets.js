@@ -9,11 +9,7 @@ import Imac from "../indy/imac";
 import Windows from "../indy/windows";
 import Scanners from "../indy/scanners";
 import Rondestoel from "../indy/rondestoel";
-
-
-
-
-
+import Plant from "../ruben/plant";
 
 
 
@@ -35,7 +31,7 @@ export default (props) => {
       <Windows />
       <Scanners />
       <Rondestoel />
-
+      <Plant />
 
     </group>
   );
