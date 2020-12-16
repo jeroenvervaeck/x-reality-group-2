@@ -56,7 +56,7 @@ export default (props) => {
     position: libraryBar_MS_position,
   }));
 
-  const libraryRoom_LS_args = [1, 3, 2];
+  const libraryRoom_LS_args = [0.5, 3, 2];
   const libraryRoom_LS_position = [8.5, -1.5, -6.5];
   const libraryRoom_LS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [libraryRoom_LS_ref] = useBox(() => ({ ...props, mass,
@@ -64,7 +64,7 @@ export default (props) => {
     rotation: libraryRoom_LS_rotation,
     position: libraryRoom_LS_position,
   }));
-  const libraryRoom_RS_args = [1, 3, 2];
+  const libraryRoom_RS_args = [0.5, 3, 2];
   const libraryRoom_RS_position = [11.9, -1.5, -6.5];
   const libraryRoom_RS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [libraryRoom_RS_ref] = useBox(() => ({ ...props, mass,
@@ -79,6 +79,30 @@ export default (props) => {
     args: libraryRoom_MS_args,
     rotation: libraryRoom_MS_rotation,
     position: libraryRoom_MS_position,
+  }));
+  const libraryDesk_LS_args = [0.7, 5, 0.6];
+  const libraryDesk_LS_position = [2.8, -2.7, -7.3];
+  const libraryDesk_LS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryDesk_LS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryDesk_LS_args,
+    rotation: libraryDesk_LS_rotation,
+    position: libraryDesk_LS_position,
+  }));
+  const libraryDesk_RS_args = [0.7, 6, 0.6];
+  const libraryDesk_RS_position = [17.8, -2.7, -6.3];
+  const libraryDesk_RS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryDesk_RS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryDesk_RS_args,
+    rotation: libraryDesk_RS_rotation,
+    position: libraryDesk_RS_position,
+  }));
+  const libraryDesk_MS_args = [16, 0.7, 0.6];
+  const libraryDesk_MS_position = [9.5, -2.7, -9.8];
+  const libraryDesk_MS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryDesk_MS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryDesk_MS_args,
+    rotation: libraryDesk_MS_rotation,
+    position: libraryDesk_MS_position,
   }));
 
   /* exteriorWalls */
@@ -332,6 +356,15 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={libraryRoom_MS_args} ref={libraryRoom_MS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryDesk_LS_args} ref={libraryDesk_LS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryDesk_RS_args} ref={libraryDesk_RS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryDesk_MS_args} ref={libraryDesk_MS_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
 
