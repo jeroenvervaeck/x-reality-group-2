@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = '0x999999'
-  const opacity = 0.10;
+  const opacity = 0;
   const angleSlope = 20;
   const angle = THREE.MathUtils.degToRad(-90 + angleSlope);
   const mass = 0; // kg
