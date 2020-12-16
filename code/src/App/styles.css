@@ -9,3 +9,7 @@ body {
   background-color: black;
   margin: 0;
 }
+canvas{
+  background: rgb(250,199,114);
+background: linear-gradient(0deg, rgba(250,199,114,1) 29%, rgba(82,71,218,1) 69%, rgba(29,21,130,1) 92%);
+}

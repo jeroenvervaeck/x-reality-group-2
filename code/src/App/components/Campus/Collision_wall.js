@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = '0x999999'
-  const opacity = 0.75;
+  const opacity = 0;
   const mass = 0; // kg
 
   const elivatorShaft_args = [1.8, 2.4, 8];
@@ -30,6 +30,55 @@ export default (props) => {
     args: dinningroomSmallWall_args,
     rotation: dinningroomSmallWall_rotation,
     position: dinningroomSmallWall_position,
+  }));
+  const libraryBar_BS_args = [3, 0.6, 2];
+  const libraryBar_BS_position = [5, -1.5, 2.3];
+  const libraryBar_BS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryBar_BS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryBar_BS_args,
+    rotation: libraryBar_BS_rotation,
+    position: libraryBar_BS_position,
+  }));
+  const libraryBar_FS_args = [3, 0.6, 2];
+  const libraryBar_FS_position = [5, -1.5, -0.3];
+  const libraryBar_FS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryBar_FS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryBar_FS_args,
+    rotation: libraryBar_FS_rotation,
+    position: libraryBar_FS_position,
+  }));
+  const libraryBar_MS_args = [0.6, 2, 2];
+  const libraryBar_MS_position = [6.4, -1.5, 1];
+  const libraryBar_MS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryBar_MS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryBar_MS_args,
+    rotation: libraryBar_MS_rotation,
+    position: libraryBar_MS_position,
+  }));
+
+  const libraryRoom_LS_args = [1, 3, 2];
+  const libraryRoom_LS_position = [8.5, -1.5, -6.5];
+  const libraryRoom_LS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryRoom_LS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryRoom_LS_args,
+    rotation: libraryRoom_LS_rotation,
+    position: libraryRoom_LS_position,
+  }));
+  const libraryRoom_RS_args = [1, 3, 2];
+  const libraryRoom_RS_position = [11.9, -1.5, -6.5];
+  const libraryRoom_RS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryRoom_RS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryRoom_RS_args,
+    rotation: libraryRoom_RS_rotation,
+    position: libraryRoom_RS_position,
+  }));
+  const libraryRoom_MS_args = [3, 0.4, 2];
+  const libraryRoom_MS_position = [10, -1.5, -8.2];
+  const libraryRoom_MS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryRoom_MS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryRoom_MS_args,
+    rotation: libraryRoom_MS_rotation,
+    position: libraryRoom_MS_position,
   }));
 
   /* exteriorWalls */
@@ -84,6 +133,14 @@ export default (props) => {
     rotation: exteriorWall_FS_0L_rotation,
     position: exteriorWall_FS_0L_position,
   }));
+  const exteriorWall_FS_box_12_args = [6, 3, 5];
+  const exteriorWall_FS_box_12_position = [-1, 2, -8.9];
+  const exteriorWall_FS_box_12_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [exteriorWall_FS_box_12_ref] = useBox(() => ({ ...props, mass,
+    args: exteriorWall_FS_box_12_args,
+    rotation: exteriorWall_FS_box_12_rotation,
+    position: exteriorWall_FS_box_12_position,
+  }));
 
   /* interiorWalls */
   const interiorWall_inkom_FS_R_args = [0.4, 6, 8];
@@ -134,7 +191,118 @@ export default (props) => {
     rotation: interiorWall_inkom_FS_L_0_rotation,
     position: interiorWall_inkom_FS_L_0_position,
   }));
-
+  const interiorWall_toilet_BS_1_args = [1.5, 0.2, 6];
+  const interiorWall_toilet_BS_1_position = [-5, 2, -4.2];
+  const interiorWall_toilet_BS_1_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_toilet_BS_1_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_toilet_BS_1_args,
+    rotation: interiorWall_toilet_BS_1_rotation,
+    position: interiorWall_toilet_BS_1_position,
+  }));
+  const interiorWall_toilet_BS_2_args = [1.5, 0.2, 6];
+  const interiorWall_toilet_BS_2_position = [-8.2, 2, -4.2];
+  const interiorWall_toilet_BS_2_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_toilet_BS_2_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_toilet_BS_2_args,
+    rotation: interiorWall_toilet_BS_2_rotation,
+    position: interiorWall_toilet_BS_2_position,
+  }));
+  const interiorWall_toilet_RS_args = [7, 0.2, 6];
+  const interiorWall_toilet_RS_position = [-9.5, 2, -7.2];
+  const interiorWall_toilet_RS_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [interiorWall_toilet_RS_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_toilet_RS_args,
+    rotation: interiorWall_toilet_RS_rotation,
+    position: interiorWall_toilet_RS_position,
+  }));
+  const interiorWall_smallwall_RS_args = [0.8, 0.2, 6];
+  const interiorWall_smallwall_RS_position = [-9.5, 2, -1.9];
+  const interiorWall_smallwall_RS_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [interiorWall_smallwall_RS_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_smallwall_RS_args,
+    rotation: interiorWall_smallwall_RS_rotation,
+    position: interiorWall_smallwall_RS_position,
+  }));
+  const interiorWall_BS_2_args = [13, 0.2, 3];
+  const interiorWall_BS_2_position = [-10.5, 4, -1.5];
+  const interiorWall_BS_2_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_BS_2_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_BS_2_args,
+    rotation: interiorWall_BS_2_rotation,
+    position: interiorWall_BS_2_position,
+  }));
+  const interiorWall_BS_1_args = [5, 0.2, 3];
+  const interiorWall_BS_1_position = [-6.8, 1, -1.5];
+  const interiorWall_BS_1_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_BS_1_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_BS_1_args,
+    rotation: interiorWall_BS_1_rotation,
+    position: interiorWall_BS_1_position,
+  }));
+  const interiorWall_FS_lokaal_1_args = [1, 0.2, 6];
+  const interiorWall_FS_lokaal_1_position = [2.9, 2, -4.5];
+  const interiorWall_FS_lokaal_1_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_FS_lokaal_1_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_FS_lokaal_1_args,
+    rotation: interiorWall_FS_lokaal_1_rotation,
+    position: interiorWall_FS_lokaal_1_position,
+  }));
+  const interiorWall_FS_lokaal_2_args = [11.4, 0.2, 6];
+  const interiorWall_FS_lokaal_2_position = [10.4, 2, -4.5];
+  const interiorWall_FS_lokaal_2_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_FS_lokaal_2_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_FS_lokaal_2_args,
+    rotation: interiorWall_FS_lokaal_2_rotation,
+    position: interiorWall_FS_lokaal_2_position,
+  }));
+  const interiorWall_BS_lokaal_1_args = [1, 0.2, 6];
+  const interiorWall_BS_lokaal_1_position = [2.9, 2, -1.4];
+  const interiorWall_BS_lokaal_1_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_BS_lokaal_1_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_BS_lokaal_1_args,
+    rotation: interiorWall_BS_lokaal_1_rotation,
+    position: interiorWall_BS_lokaal_1_position,
+  }));
+  const interiorWall_BS_lokaal_2_args = [4, 0.2, 6];
+  const interiorWall_BS_lokaal_2_position = [6.6, 2, -1.4];
+  const interiorWall_BS_lokaal_2_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_BS_lokaal_2_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_BS_lokaal_2_args,
+    rotation: interiorWall_BS_lokaal_2_rotation,
+    position: interiorWall_BS_lokaal_2_position,
+  }));
+  const interiorWall_BS_lokaal_3_args = [1.5, 0.2, 6];
+  const interiorWall_BS_lokaal_3_position = [10.7, 2, -1.4];
+  const interiorWall_BS_lokaal_3_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_BS_lokaal_3_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_BS_lokaal_3_args,
+    rotation: interiorWall_BS_lokaal_3_rotation,
+    position: interiorWall_BS_lokaal_3_position,
+  }));
+  const interiorWall_BS_lokaal_4_args = [3.6, 0.2, 6];
+  const interiorWall_BS_lokaal_4_position = [14.5, 2, -1.4];
+  const interiorWall_BS_lokaal_4_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_BS_lokaal_4_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_BS_lokaal_4_args,
+    rotation: interiorWall_BS_lokaal_4_rotation,
+    position: interiorWall_BS_lokaal_4_position,
+  }));
+  const interiorWall_BS_lokaal_5_args = [6, 0.2, 6];
+  const interiorWall_BS_lokaal_5_position = [10.7, 2, 2.5];
+  const interiorWall_BS_lokaal_5_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [interiorWall_BS_lokaal_5_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_BS_lokaal_5_args,
+    rotation: interiorWall_BS_lokaal_5_rotation,
+    position: interiorWall_BS_lokaal_5_position,
+  }));
+  const interiorWall_BS_lokaal_6_args = [5, 0.2, 3];
+  const interiorWall_BS_lokaal_6_position = [10.7, 4, -7.5];
+  const interiorWall_BS_lokaal_6_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [interiorWall_BS_lokaal_6_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_BS_lokaal_6_args,
+    rotation: interiorWall_BS_lokaal_6_rotation,
+    position: interiorWall_BS_lokaal_6_position,
+  }));
 
   return (
     <group> 
@@ -146,6 +314,24 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={dinningroomSmallWall_args} ref={dinningroomSmallWall_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryBar_BS_args} ref={libraryBar_BS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryBar_FS_args} ref={libraryBar_FS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryBar_MS_args} ref={libraryBar_MS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryRoom_LS_args} ref={libraryRoom_LS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryRoom_RS_args} ref={libraryRoom_RS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryRoom_MS_args} ref={libraryRoom_MS_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
 
@@ -168,6 +354,9 @@ export default (props) => {
       <Box args={exteriorWall_FS_0L_args} ref={exteriorWall_FS_0L_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
+      <Box args={exteriorWall_FS_box_12_args} ref={exteriorWall_FS_box_12_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
 
 	  {/* interiorWalls */}
       <Box args={interiorWall_inkom_FS_R_args} ref={interiorWall_inkom_FS_R_ref} >
@@ -186,6 +375,48 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={interiorWall_inkom_FS_L_0_args} ref={interiorWall_inkom_FS_L_0_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_toilet_BS_1_args} ref={interiorWall_toilet_BS_1_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_toilet_BS_2_args} ref={interiorWall_toilet_BS_2_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_toilet_RS_args} ref={interiorWall_toilet_RS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_smallwall_RS_args} ref={interiorWall_smallwall_RS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_BS_2_args} ref={interiorWall_BS_2_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_BS_1_args} ref={interiorWall_BS_1_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_FS_lokaal_1_args} ref={interiorWall_FS_lokaal_1_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_FS_lokaal_2_args} ref={interiorWall_FS_lokaal_2_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_BS_lokaal_1_args} ref={interiorWall_BS_lokaal_1_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_BS_lokaal_2_args} ref={interiorWall_BS_lokaal_2_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_BS_lokaal_3_args} ref={interiorWall_BS_lokaal_3_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_BS_lokaal_4_args} ref={interiorWall_BS_lokaal_4_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_BS_lokaal_5_args} ref={interiorWall_BS_lokaal_5_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_BS_lokaal_6_args} ref={interiorWall_BS_lokaal_6_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
     </group>
