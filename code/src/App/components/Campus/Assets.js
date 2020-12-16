@@ -5,7 +5,7 @@ import Bookshelve from "../indy/bookshelves";
 import StopcontactMediatheek from "../indy/stopcontactMediatheek";
 import TafelMediatheek from "../indy/tafelmediatheek";
 import Printer from "../indy/printer";
-
+import Plant from "../ruben/plant";
 
 
 
@@ -23,6 +23,7 @@ export default (props) => {
       <TafelMediatheek />
       <Bookshelve />
       <Printer />
+      <Plant />
 
     </group>
   );
