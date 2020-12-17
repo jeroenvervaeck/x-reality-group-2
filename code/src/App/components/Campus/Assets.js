@@ -6,6 +6,7 @@ import StopcontactMediatheek from "../indy/stopcontactMediatheek";
 import TafelMediatheek from "../indy/tafelmediatheek";
 import Printer from "../indy/printer";
 
+import Tafel_eetzaal from "../morgane/Tafels_eetzaal";
 
 
 
@@ -23,6 +24,8 @@ export default (props) => {
       <TafelMediatheek />
       <Bookshelve />
       <Printer />
+
+      <Tafel_eetzaal/>
 
     </group>
   );
