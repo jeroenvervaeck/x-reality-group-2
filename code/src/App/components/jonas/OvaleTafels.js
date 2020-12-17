@@ -14,56 +14,49 @@ export default () => {
         <group>
             <mesh
                 geometry={nodes.Table.geometry}
-                scale={[1, 0.02, 1]}
+                scale={[1, 0.025, 1]}
                 position={[-15, 1, 0]}
                 material={materials["TableWhite"]}
                 castShadow={true}
             />
             <mesh
                 geometry={nodes.Table.geometry}
-                scale={[1, 0.02, 1]}
+                scale={[1, 0.025, 1]}
                 position={[-11, 1, 0]}
                 material={materials["TableWhite"]}
                 castShadow={true}
             />
             <mesh
                 geometry={nodes.Table.geometry}
-                scale={[1, 0.02, 1]}
+                scale={[1, 0.025, 1]}
                 position={[-15, 1, 3]}
                 material={materials["TableWhite"]}
                 castShadow={true}
             />
             <mesh
                 geometry={nodes.Table.geometry}
-                scale={[1, 0.02, 1]}
+                scale={[1, 0.025, 1]}
                 position={[-11, 1, 3]}
                 material={materials["TableWhite"]}
                 castShadow={true}
             />
             <mesh
                 geometry={nodes.Table.geometry}
-                scale={[1, 0.02, 1]}
+                scale={[1, 0.025, 1]}
                 position={[-15, 1, -3]}
                 material={materials["TableWhite"]}
                 castShadow={true}
             />
-            {/*<mesh*/}
-            {/*    geometry={nodes.Table.geometry}*/}
-            {/*    scale={[1, 0.02, 1]}*/}
-            {/*    position={[-11, 1, -3]}*/}
-            {/*    material={materials["TableWhite"]}*/}
-            {/*    castShadow={true}*/}
-            {/*/>*/}
             <mesh
                 geometry={nodes.Table.geometry}
-                scale={[1, 0.02, 1]}
+                scale={[1, 0.025, 1]}
                 position={[-15, 1, -6]}
                 material={materials["TableWhite"]}
                 castShadow={true}
             />
             <mesh
                 geometry={nodes.Table.geometry}
-                scale={[1, 0.02, 1]}
+                scale={[1, 0.025, 1]}
                 position={[-11, 1, -6]}
                 material={materials["TableWhite"]}
                 castShadow={true}
