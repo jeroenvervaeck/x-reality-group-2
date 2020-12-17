@@ -7,9 +7,6 @@ export default () => {
     const {nodes, materials} = useGLTF(modelPath, true);
     const seatGridRef = useRef();
 
-    console.log("seatGrid:", nodes);
-    console.log("sg materials:", materials);
-
     return (
         <group>
             <mesh
