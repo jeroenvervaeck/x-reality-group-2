@@ -16,7 +16,8 @@ export default (props) => {
   const pointerRef = useRef();
   const args = BOX_SIZE; // radius in m
   const mass = 75; // kg
-  const position = [-1, -1.4, -3];
+  // const position = [-1, -1.4, -3];
+  const position = [-1, 7, -3];
   const [playerRef, playerApi] = useSphere(() => ({
     ...props,
     args,

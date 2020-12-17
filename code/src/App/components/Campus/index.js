@@ -5,6 +5,7 @@ import Player from "./Player";
 import Base from "./Base";
 import Collision_floor from "./Collision_floor";
 import Collision_wall from "./Collision_wall";
+import Collision_assets from "./Collision_assets";
 
 import Campus from "./Campus";
 import Lighting from "./Lighting";
@@ -24,6 +25,7 @@ export default () => {
         
         { true && <Collision_floor />}
         { true && <Collision_wall />}
+        { true && <Collision_assets />}
 
         { true && <Campus />}
         { true && <Lighting />}
