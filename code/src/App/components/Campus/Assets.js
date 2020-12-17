@@ -13,10 +13,10 @@ import Windows from "../indy/windows";
 import Scanners from "../indy/scanners";
 import Rondestoel from "../indy/rondestoel";
 import MetalKast from "../indy/kabinetKast";
+import Button from "../ruben/button";
 
 
 
-import Tafel_eetzaal from "../morgane/Tafels_eetzaal";
 
 
 import Plant from "../ruben/plant";
@@ -32,7 +32,6 @@ import Brandslang from "../morgane/Brandslang_eetzaal";
 import Vuilbakken from "../morgane/Vuilbakken_eetzaal";
 
 
-import Plant from "../ruben/plant";
 
 
 export default (props) => {
@@ -40,6 +39,7 @@ export default (props) => {
 
   return (
     <group>
+      <Button />
       <BruineZitbank />
       <ZwarteZitbank />
       <LavaboAndMirror />
