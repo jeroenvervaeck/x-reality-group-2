@@ -8,6 +8,12 @@ import Printer from "../indy/printer";
 
 import Tafel_eetzaal from "../morgane/Tafels_eetzaal";
 
+import Imac from "../indy/imac";
+import Windows from "../indy/windows";
+import Scanners from "../indy/scanners";
+import Rondestoel from "../indy/rondestoel";
+import Plant from "../ruben/plant";
+
 
 
 
@@ -24,6 +30,11 @@ export default (props) => {
       <TafelMediatheek />
       <Bookshelve />
       <Printer />
+      <Imac />
+      <Windows />
+      <Scanners />
+      <Rondestoel />
+      <Plant />
 
       <Tafel_eetzaal/>
 

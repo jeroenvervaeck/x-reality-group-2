@@ -175,7 +175,7 @@ export default (props) => {
     rotation: interiorWall_inkom_FS_R_rotation,
     position: interiorWall_inkom_FS_R_position,
   }));
-  const interiorWall_inkom_FS_L_args = [0.4, 6, 8];
+  const interiorWall_inkom_FS_L_args = [0.4, 7.5, 8];
   const interiorWall_inkom_FS_L_position = [2.1, 1, -7.2];
   const interiorWall_inkom_FS_L_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [interiorWall_inkom_FS_L_ref] = useBox(() => ({ ...props, mass,
@@ -191,7 +191,7 @@ export default (props) => {
     rotation: interiorWall_inkom_BS_R_rotation,
     position: interiorWall_inkom_BS_R_position,
   }));
-  const interiorWall_inkom_BS_L_args = [0.4, 6, 8];
+  const interiorWall_inkom_BS_L_args = [0.4, 6.4, 8];
   const interiorWall_inkom_BS_L_position = [2.1, 1, 1.4];
   const interiorWall_inkom_BS_L_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [interiorWall_inkom_BS_L_ref] = useBox(() => ({ ...props, mass,
@@ -319,14 +319,6 @@ export default (props) => {
     rotation: interiorWall_BS_lokaal_5_rotation,
     position: interiorWall_BS_lokaal_5_position,
   }));
-  const interiorWall_BS_lokaal_6_args = [5, 0.2, 3];
-  const interiorWall_BS_lokaal_6_position = [10.7, 4, -7.5];
-  const interiorWall_BS_lokaal_6_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
-  const [interiorWall_BS_lokaal_6_ref] = useBox(() => ({ ...props, mass,
-    args: interiorWall_BS_lokaal_6_args,
-    rotation: interiorWall_BS_lokaal_6_rotation,
-    position: interiorWall_BS_lokaal_6_position,
-  }));
 
   return (
     <group> 
@@ -447,9 +439,6 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={interiorWall_BS_lokaal_5_args} ref={interiorWall_BS_lokaal_5_ref} >
-        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
-      </Box>
-      <Box args={interiorWall_BS_lokaal_6_args} ref={interiorWall_BS_lokaal_6_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
     </group>
