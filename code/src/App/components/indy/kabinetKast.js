@@ -2,38 +2,33 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-import glb from "./glb/printer.glb";
+import glb from "../jonas/models/KabinetKast.glb";
 
 export default () => {
+
   const gltf1 = useGLTF(glb, true);
-
   const Ref1 = useRef();
-
-
-
   
   return (
     <group>
     
-    <group>
+      <group>
         <primitive
           object={gltf1.scene.clone()}
-          position={[14.3, -2.7, -1.1]}
-          rotation={[0,-1.55,0]}
-          scale={[0.95,0.85,0.85]}
+          position={[2.65, -2.7, 2.3]}
+          scale={[1.2,1.2,1.2]}
+  	  	  ref={Ref1}
+  	    />
+      </group>  
+      <group>
+        <primitive
+          object={gltf1.scene.clone()}
+          position={[2.65, -2.7, 0.45]}
+          scale={[1.2,1.2,1.2]}
   	  	  ref={Ref1}
   	    />
       </group>  
 
-      <group>
-        <primitive
-          object={gltf1.scene.clone()}
-          position={[14.3, -2.7, 1.4]}
-          rotation={[0,-1.55,0]}
-          scale={[0.95,0.85,0.85]}
-  	  	  ref={Ref1}
-  	    />
-      </group>  
 
     </group>
   );
