@@ -1,7 +1,7 @@
 import BruineZitbank from "../jeroen/BruineZitbank";
 import ZwarteZitbank from "../jeroen/ZwarteZitbank";
 import LavaboAndMirror from "../jeroen/LavaboAndMirror";
-
+import Button from "../ruben/button";
 import Bookshelve from "../indy/bookshelves";
 import StopcontactMediatheek from "../indy/stopcontactMediatheek";
 import TafelMediatheek from "../indy/tafelmediatheek";
@@ -38,6 +38,7 @@ export default (props) => {
       <Bookshelve />
       <Printer />
       <Imac />
+      <Button />
       <Windows />
       <Scanners />
       <Rondestoel />
