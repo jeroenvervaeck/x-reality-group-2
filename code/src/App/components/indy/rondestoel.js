@@ -9,9 +9,20 @@ export default () => {
   const Ref1 = useRef();
 
 
-
-
-
+    // createChairs = () => {
+    //     for (let i = 0; i < 5; i++) {
+    //         const element = array[i];
+    //         <group>
+    //             <primitive
+    //                 object={gltf1.scene.clone()}
+    //                 position={[9 + i, -2.5, -1.5]}
+    //                 scale={[0.77,0.9,0.9]}
+    //                 ref={Ref1}
+    //             />
+    //     </group>  
+            
+    //     }
+    // }
 
   
   return (
@@ -175,7 +186,8 @@ export default () => {
         </group>    
 
 
-     
+       {/* test  */}
+      {/* { this.createChairs()} */}
     </group>
   );
 };

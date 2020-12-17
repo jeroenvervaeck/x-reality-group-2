@@ -175,7 +175,7 @@ export default (props) => {
     rotation: interiorWall_inkom_FS_R_rotation,
     position: interiorWall_inkom_FS_R_position,
   }));
-  const interiorWall_inkom_FS_L_args = [0.4, 6, 8];
+  const interiorWall_inkom_FS_L_args = [0.4, 7.5, 8];
   const interiorWall_inkom_FS_L_position = [2.1, 1, -7.2];
   const interiorWall_inkom_FS_L_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [interiorWall_inkom_FS_L_ref] = useBox(() => ({ ...props, mass,
@@ -191,7 +191,7 @@ export default (props) => {
     rotation: interiorWall_inkom_BS_R_rotation,
     position: interiorWall_inkom_BS_R_position,
   }));
-  const interiorWall_inkom_BS_L_args = [0.4, 6, 8];
+  const interiorWall_inkom_BS_L_args = [0.4, 6.4, 8];
   const interiorWall_inkom_BS_L_position = [2.1, 1, 1.4];
   const interiorWall_inkom_BS_L_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [interiorWall_inkom_BS_L_ref] = useBox(() => ({ ...props, mass,

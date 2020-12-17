@@ -44,15 +44,11 @@ export default () => {
       <group>
         <primitive
           object={gltf1.scene.clone()}
-          position={[10, -1.8, -0.4]}
+          position={[10, -1.8, -0.42]}
           rotation={[0,-1.57,0]}
   	  	  ref={Ref4}
   	    />
       </group>  
-
-
-
-  
 
     </group>
   );
