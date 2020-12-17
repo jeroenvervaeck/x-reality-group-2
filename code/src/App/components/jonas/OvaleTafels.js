@@ -5,10 +5,9 @@ import modelPath from "./models/OvaleTafels.glb";
 
 export default () => {
     const {nodes, materials} = useGLTF(modelPath, true);
-    const seatGridRef = useRef();
 
-    console.log("OvaleTafels:", nodes);
-    console.log("OT materials:", materials);
+    console.log("Nodes:", nodes);
+    console.log("Materials:", materials);
 
     return (
         <group>
