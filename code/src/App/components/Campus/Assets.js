@@ -20,6 +20,7 @@ import Tafel_eetzaal from "../morgane/Tafels_eetzaal";
 import Plant from "../ruben/plant";
 import SeatGrid from "../jonas/SeatGrid";
 import OvaleTafels from "../jonas/OvaleTafels";
+import GroteTafel from "../jonas/GroteTafel";
 
 
 
@@ -46,6 +47,7 @@ export default (props) => {
       <Tafel_eetzaal/>
       <MetalKast />
       <OvaleTafels />
+      <GroteTafel />
 
     </group>
   );
