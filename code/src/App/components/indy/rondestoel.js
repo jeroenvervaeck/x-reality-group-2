@@ -32,7 +32,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[9, -2.5, -1.5]}
+            position={[9, -2.5, -1.1]}
             scale={[0.77,0.9,0.9]}
             ref={Ref1}
             />
@@ -41,7 +41,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[9.6, -2.5, -1.5]}
+            position={[9.6, -2.5, -1.1]}
             scale={[0.77,0.9,0.9]}
             ref={Ref1}
             />
@@ -49,7 +49,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[10.3, -2.5, -1.5]}
+            position={[10.3, -2.5, -1.1]}
             scale={[0.77,0.9,0.9]}
             ref={Ref1}
             />
@@ -58,7 +58,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[11, -2.5, -1.5]}
+            position={[11, -2.5, -1.1]}
             scale={[0.77,0.9,0.9]}
             ref={Ref1}
             />
@@ -69,7 +69,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[9, -2.5, -0.1]}
+            position={[9, -2.5, 0.3]}
             scale={[0.77,0.9,0.9]}
             rotation={[0,3.1,0]}
             ref={Ref1}
@@ -79,7 +79,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[9.6, -2.5, -0.1]}
+            position={[9.6, -2.5, 0.3]}
             scale={[0.77,0.9,0.9]}
             rotation={[0,3.1,0]}
             ref={Ref1}
@@ -88,7 +88,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[10.3, -2.5, -0.1]}
+            position={[10.3, -2.5, 0.3]}
             scale={[0.77,0.9,0.9]}
             rotation={[0,3.1,0]}
             ref={Ref1}
@@ -98,7 +98,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[11, -2.5, -0.1]}
+            position={[11, -2.5, 0.3]}
             scale={[0.77,0.9,0.9]}
             rotation={[0,3.1,0]}
             ref={Ref1}
@@ -112,7 +112,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[9, -2.5, 1.3]}
+            position={[9, -2.5, 1.7]}
             scale={[0.77,0.9,0.9]}
             ref={Ref1}
             />
@@ -121,7 +121,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[9.6, -2.5, 1.3]}
+            position={[9.6, -2.5, 1.7]}
             scale={[0.77,0.9,0.9]}
             ref={Ref1}
             />
@@ -129,7 +129,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[10.3, -2.5, 1.3]}
+            position={[10.3, -2.5, 1.7]}
             scale={[0.77,0.9,0.9]}
             ref={Ref1}
             />
@@ -138,7 +138,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[11, -2.5, 1.3]}
+            position={[11, -2.5, 1.7]}
             scale={[0.77,0.9,0.9]}
             ref={Ref1}
             />
@@ -149,7 +149,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[9, -2.5, 2.7]}
+            position={[9, -2.5, 3.1]}
             scale={[0.77,0.9,0.9]}
             rotation={[0,3.1,0]}
             ref={Ref1}
@@ -159,7 +159,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[9.6, -2.5, 2.7]}
+            position={[9.6, -2.5, 3.1]}
             scale={[0.77,0.9,0.9]}
             rotation={[0,3.1,0]}
             ref={Ref1}
@@ -168,7 +168,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[10.3, -2.5, 2.7]}
+            position={[10.3, -2.5, 3.1]}
             scale={[0.77,0.9,0.9]}
             rotation={[0,3.1,0]}
             ref={Ref1}
@@ -178,7 +178,7 @@ export default () => {
         <group>
             <primitive
             object={gltf1.scene.clone()}
-            position={[11, -2.5, 2.7]}
+            position={[11, -2.5, 3.1]}
             scale={[0.77,0.9,0.9]}
             rotation={[0,3.1,0]}
             ref={Ref1}
