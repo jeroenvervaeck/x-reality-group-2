@@ -8,10 +8,6 @@ export default () => {
   const gltf1 = useGLTF(glb, true);
 
   const Ref1 = useRef();
-  const Ref2 = useRef();
-  const Ref3 = useRef();
-  const Ref4 = useRef();
-  const Ref5 = useRef();
 
 
 
@@ -31,7 +27,7 @@ export default () => {
           object={gltf1.scene.clone()}
           position={[16.44, -1.9,   4.05]}
           rotation={[0,1.57,0]}
-  	  	  ref={Ref2}
+  	  	  ref={Ref1}
   	    />
       </group>  
 
@@ -39,7 +35,7 @@ export default () => {
         <primitive
           object={gltf1.scene.clone()}
           position={[17.55, -1.9, 2.34]}
-  	  	  ref={Ref3}
+  	  	  ref={Ref1}
   	    />
       </group>  
 
@@ -47,7 +43,7 @@ export default () => {
         <primitive
           object={gltf1.scene.clone()}
           position={[17.55, -1.9, 3.75]}
-  	  	  ref={Ref4}
+  	  	  ref={Ref1}
   	    />
       </group>  
 
@@ -55,7 +51,7 @@ export default () => {
         <primitive
           object={gltf1.scene.clone()}
           position={[14.3, -1.9, 0.1]}
-  	  	  ref={Ref5}
+  	  	  ref={Ref1}
   	    />
       </group>  
 
