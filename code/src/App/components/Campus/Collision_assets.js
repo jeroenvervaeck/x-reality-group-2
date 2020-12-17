@@ -10,7 +10,7 @@ export default (props) => {
 
   // Gelijkvloers
   const library_printers_args = [0.6, 3, 0.8];
-  const library_printers_position = [14.2, -2.3, 0.2];
+  const library_printers_position = [14.2, -2.3, 1.2];
   const library_printers_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [library_printers_ref] = useBox(() => ({ ...props, mass,
     args: library_printers_args,

@@ -80,7 +80,7 @@ export default (props) => {
     position: dinningroomColumn_6_position,
   }));
   const libraryBar_BS_args = [3, 0.6, 2];
-  const libraryBar_BS_position = [5, -1.5, 2.3];
+  const libraryBar_BS_position = [5.5, -1.5, 2.3];
   const libraryBar_BS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [libraryBar_BS_ref] = useBox(() => ({ ...props, mass,
     args: libraryBar_BS_args,
@@ -88,7 +88,7 @@ export default (props) => {
     position: libraryBar_BS_position,
   }));
   const libraryBar_FS_args = [3, 0.6, 2];
-  const libraryBar_FS_position = [5, -1.5, -0.3];
+  const libraryBar_FS_position = [5.5, -1.5, -0.3];
   const libraryBar_FS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [libraryBar_FS_ref] = useBox(() => ({ ...props, mass,
     args: libraryBar_FS_args,
@@ -96,7 +96,7 @@ export default (props) => {
     position: libraryBar_FS_position,
   }));
   const libraryBar_MS_args = [0.6, 2, 2];
-  const libraryBar_MS_position = [6.4, -1.5, 1];
+  const libraryBar_MS_position = [7, -1.5, 1];
   const libraryBar_MS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [libraryBar_MS_ref] = useBox(() => ({ ...props, mass,
     args: libraryBar_MS_args,
@@ -104,7 +104,7 @@ export default (props) => {
     position: libraryBar_MS_position,
   }));
   const libraryDesk_middel_BS_args = [3, 1.5, 1];
-  const libraryDesk_middel_BS_position = [10, -2, 2];
+  const libraryDesk_middel_BS_position = [10, -2, 2.5];
   const libraryDesk_middel_BS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [libraryDesk_middel_BS_ref] = useBox(() => ({ ...props, mass,
     args: libraryDesk_middel_BS_args,
@@ -112,7 +112,7 @@ export default (props) => {
     position: libraryDesk_middel_BS_position,
   }));
   const libraryDesk_middel_FS_args = [3, 1.5, 1];
-  const libraryDesk_middel_FS_position = [10, -2, -0.8];
+  const libraryDesk_middel_FS_position = [10, -2, -0.3];
   const libraryDesk_middel_FS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [libraryDesk_middel_FS_ref] = useBox(() => ({ ...props, mass,
     args: libraryDesk_middel_FS_args,
@@ -240,7 +240,7 @@ export default (props) => {
     position: interiorWall_inkom_FS_R_position,
   }));
   const interiorWall_inkom_FS_L_args = [0.4, 6, 8];
-  const interiorWall_inkom_FS_L_position = [-4.3, 1, -7.7 ];
+  const interiorWall_inkom_FS_L_position = [2, 1, -7.1];
   const interiorWall_inkom_FS_L_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [interiorWall_inkom_FS_L_ref] = useBox(() => ({ ...props, mass,
     args: interiorWall_inkom_FS_L_args,
@@ -256,7 +256,7 @@ export default (props) => {
     position: interiorWall_inkom_BS_R_position,
   }));
   const interiorWall_inkom_BS_L_args = [0.4, 6.4, 8];
-  const interiorWall_inkom_BS_L_position = [2.1, 1, 1.4];
+  const interiorWall_inkom_BS_L_position = [2.1, 1, 1.6];
   const interiorWall_inkom_BS_L_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [interiorWall_inkom_BS_L_ref] = useBox(() => ({ ...props, mass,
     args: interiorWall_inkom_BS_L_args,
