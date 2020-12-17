@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = '0x999999'
-  const opacity = 0;
+  const opacity = 0.50;
   const mass = 0; // kg
 
   const elivatorShaft_args = [1.8, 2.4, 8];
@@ -30,6 +30,22 @@ export default (props) => {
     args: dinningroomSmallWall_args,
     rotation: dinningroomSmallWall_rotation,
     position: dinningroomSmallWall_position,
+  }));
+  const dinningroomColumn_1_args = [0.4, 0.4, 4];
+  const dinningroomColumn_1_position = [-11.2, -2, -8.8];
+  const dinningroomColumn_1_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [dinningroomColumn_1_ref] = useBox(() => ({ ...props, mass,
+    args: dinningroomColumn_1_args,
+    rotation: dinningroomColumn_1_rotation,
+    position: dinningroomColumn_1_position,
+  }));
+  const dinningroomColumn_2_args = [0.4, 0.4, 4];
+  const dinningroomColumn_2_position = [-11.2, -2, -4.2];
+  const dinningroomColumn_2_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [dinningroomColumn_2_ref] = useBox(() => ({ ...props, mass,
+    args: dinningroomColumn_2_args,
+    rotation: dinningroomColumn_2_rotation,
+    position: dinningroomColumn_2_position,
   }));
   const libraryBar_BS_args = [3, 0.6, 2];
   const libraryBar_BS_position = [5, -1.5, 2.3];
@@ -330,6 +346,12 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={dinningroomSmallWall_args} ref={dinningroomSmallWall_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={dinningroomColumn_1_args} ref={dinningroomColumn_1_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={dinningroomColumn_2_args} ref={dinningroomColumn_2_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={libraryBar_BS_args} ref={libraryBar_BS_ref} >
