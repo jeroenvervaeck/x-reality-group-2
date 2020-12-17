@@ -247,6 +247,14 @@ export default (props) => {
     rotation: interiorWall_inkom_FS_L_rotation,
     position: interiorWall_inkom_FS_L_position,
   }));
+  const interiorWall_inkom_FS_Low_args = [0.4, 0.5, 2];
+  const interiorWall_inkom_FS_Low_position = [2, -2, -3.8];
+  const interiorWall_inkom_FS_Low_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [interiorWall_inkom_FS_Low_ref] = useBox(() => ({ ...props, mass,
+    args: interiorWall_inkom_FS_Low_args,
+    rotation: interiorWall_inkom_FS_Low_rotation,
+    position: interiorWall_inkom_FS_Low_position,
+  }));
   const interiorWall_inkom_BS_R_args = [0.4, 6, 8];
   const interiorWall_inkom_BS_R_position = [-4.3, 1, 1.4];
   const interiorWall_inkom_BS_R_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
@@ -476,6 +484,9 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={interiorWall_inkom_FS_L_args} ref={interiorWall_inkom_FS_L_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={interiorWall_inkom_FS_Low_args} ref={interiorWall_inkom_FS_Low_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={interiorWall_inkom_BS_R_args} ref={interiorWall_inkom_BS_R_ref} >
