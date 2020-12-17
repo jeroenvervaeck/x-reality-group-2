@@ -7,8 +7,8 @@ import { KeyboardControls } from "App/lib";
 
 const BOX_SIZE = 0.5; // m
 const VELOCITY = {
-  FORWARD_DIRECTION: 8,
-  RIGHT_DIRECTION: 8,
+  FORWARD_DIRECTION: 10,
+  RIGHT_DIRECTION: 5,
 };
 
 export default (props) => {
@@ -16,7 +16,8 @@ export default (props) => {
   const pointerRef = useRef();
   const args = BOX_SIZE; // radius in m
   const mass = 75; // kg
-  const position = [-1, -1.4, -3];
+  // const position = [-1, -1.4, -3];
+  const position = [-1, 7, -3];
   const [playerRef, playerApi] = useSphere(() => ({
     ...props,
     args,

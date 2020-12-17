@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = '0x999999'
-  const opacity = 0;
+  const opacity = 0.50;
   const mass = 0; // kg
 
   const elivatorShaft_args = [1.8, 2.4, 8];
@@ -31,6 +31,54 @@ export default (props) => {
     rotation: dinningroomSmallWall_rotation,
     position: dinningroomSmallWall_position,
   }));
+  const dinningroomColumn_1_args = [0.4, 0.4, 4];
+  const dinningroomColumn_1_position = [-11.2, -2, -8.8];
+  const dinningroomColumn_1_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [dinningroomColumn_1_ref] = useBox(() => ({ ...props, mass,
+    args: dinningroomColumn_1_args,
+    rotation: dinningroomColumn_1_rotation,
+    position: dinningroomColumn_1_position,
+  }));
+  const dinningroomColumn_2_args = [0.4, 0.4, 4];
+  const dinningroomColumn_2_position = [-11.2, -2, -4.2];
+  const dinningroomColumn_2_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [dinningroomColumn_2_ref] = useBox(() => ({ ...props, mass,
+    args: dinningroomColumn_2_args,
+    rotation: dinningroomColumn_2_rotation,
+    position: dinningroomColumn_2_position,
+  }));
+  const dinningroomColumn_3_args = [0.4, 0.4, 4];
+  const dinningroomColumn_3_position = [-15.7, -2, -8.8];
+  const dinningroomColumn_3_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [dinningroomColumn_3_ref] = useBox(() => ({ ...props, mass,
+    args: dinningroomColumn_3_args,
+    rotation: dinningroomColumn_3_rotation,
+    position: dinningroomColumn_3_position,
+  }));
+  const dinningroomColumn_4_args = [0.4, 0.4, 4];
+  const dinningroomColumn_4_position = [-15.7, -2, -4.2];
+  const dinningroomColumn_4_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [dinningroomColumn_4_ref] = useBox(() => ({ ...props, mass,
+    args: dinningroomColumn_4_args,
+    rotation: dinningroomColumn_4_rotation,
+    position: dinningroomColumn_4_position,
+  }));
+  const dinningroomColumn_5_args = [0.4, 0.4, 4];
+  const dinningroomColumn_5_position = [-7, -2, -8.8];
+  const dinningroomColumn_5_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [dinningroomColumn_5_ref] = useBox(() => ({ ...props, mass,
+    args: dinningroomColumn_5_args,
+    rotation: dinningroomColumn_5_rotation,
+    position: dinningroomColumn_5_position,
+  }));
+  const dinningroomColumn_6_args = [0.4, 0.4, 4];
+  const dinningroomColumn_6_position = [-7, -2, -4.2];
+  const dinningroomColumn_6_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [dinningroomColumn_6_ref] = useBox(() => ({ ...props, mass,
+    args: dinningroomColumn_6_args,
+    rotation: dinningroomColumn_6_rotation,
+    position: dinningroomColumn_6_position,
+  }));
   const libraryBar_BS_args = [3, 0.6, 2];
   const libraryBar_BS_position = [5, -1.5, 2.3];
   const libraryBar_BS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
@@ -54,6 +102,22 @@ export default (props) => {
     args: libraryBar_MS_args,
     rotation: libraryBar_MS_rotation,
     position: libraryBar_MS_position,
+  }));
+  const libraryDesk_middel_BS_args = [3, 1.5, 1];
+  const libraryDesk_middel_BS_position = [10, -2, 2];
+  const libraryDesk_middel_BS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryDesk_middel_BS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryDesk_middel_BS_args,
+    rotation: libraryDesk_middel_BS_rotation,
+    position: libraryDesk_middel_BS_position,
+  }));
+  const libraryDesk_middel_FS_args = [3, 1.5, 1];
+  const libraryDesk_middel_FS_position = [10, -2, -0.8];
+  const libraryDesk_middel_FS_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [libraryDesk_middel_FS_ref] = useBox(() => ({ ...props, mass,
+    args: libraryDesk_middel_FS_args,
+    rotation: libraryDesk_middel_FS_rotation,
+    position: libraryDesk_middel_FS_position,
   }));
 
   const libraryRoom_LS_args = [0.5, 3, 2];
@@ -175,8 +239,8 @@ export default (props) => {
     rotation: interiorWall_inkom_FS_R_rotation,
     position: interiorWall_inkom_FS_R_position,
   }));
-  const interiorWall_inkom_FS_L_args = [0.4, 7.5, 8];
-  const interiorWall_inkom_FS_L_position = [2.1, 1, -7.2];
+  const interiorWall_inkom_FS_L_args = [0.4, 6, 8];
+  const interiorWall_inkom_FS_L_position = [-4.3, 1, -7.7 ];
   const interiorWall_inkom_FS_L_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [interiorWall_inkom_FS_L_ref] = useBox(() => ({ ...props, mass,
     args: interiorWall_inkom_FS_L_args,
@@ -332,6 +396,24 @@ export default (props) => {
       <Box args={dinningroomSmallWall_args} ref={dinningroomSmallWall_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
+      <Box args={dinningroomColumn_1_args} ref={dinningroomColumn_1_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={dinningroomColumn_2_args} ref={dinningroomColumn_2_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={dinningroomColumn_3_args} ref={dinningroomColumn_3_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={dinningroomColumn_4_args} ref={dinningroomColumn_4_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={dinningroomColumn_5_args} ref={dinningroomColumn_5_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={dinningroomColumn_6_args} ref={dinningroomColumn_6_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
       <Box args={libraryBar_BS_args} ref={libraryBar_BS_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
@@ -348,6 +430,12 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={libraryRoom_MS_args} ref={libraryRoom_MS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryDesk_middel_BS_args} ref={libraryDesk_middel_BS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={libraryDesk_middel_FS_args} ref={libraryDesk_middel_FS_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={libraryDesk_LS_args} ref={libraryDesk_LS_ref} >

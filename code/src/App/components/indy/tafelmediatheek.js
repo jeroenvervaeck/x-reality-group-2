@@ -47,10 +47,11 @@ export default () => {
   	    />
       </group>  
 
+    {/* Tafels tussen printers */}
       <group>
         <primitive
           object={gltf1.scene.clone()}
-          position={[14.3, -1.9, 0.1]}
+          position={[14.3, -1.9, 0.95]}
   	  	  ref={Ref1}
   	    />
       </group>  
