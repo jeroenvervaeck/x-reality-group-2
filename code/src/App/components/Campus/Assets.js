@@ -13,6 +13,7 @@ import Windows from "../indy/windows";
 import Scanners from "../indy/scanners";
 import Rondestoel from "../indy/rondestoel";
 import Plant from "../ruben/plant";
+import SeatGrid from "../jonas/SeatGrid";
 
 
 
@@ -35,7 +36,7 @@ export default (props) => {
       <Scanners />
       <Rondestoel />
       <Plant />
-
+      <SeatGrid />
       <Tafel_eetzaal/>
 
     </group>
