@@ -10,6 +10,6 @@ body {
   margin: 0;
 }
 canvas{
-  background: rgb(250,199,114);
-background: linear-gradient(0deg, rgba(250,199,114,1) 29%, rgba(82,71,218,1) 69%, rgba(29,21,130,1) 92%);
+  background: rgb(238,246,74);
+background: linear-gradient(0deg, rgba(238,246,74,1) 0%, rgba(17,167,242,1) 100%);
 }
