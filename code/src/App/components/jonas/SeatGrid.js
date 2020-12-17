@@ -15,9 +15,17 @@ export default () => {
             <mesh
                 geometry={nodes.Leuning.geometry}
                 scale={[0.015, 0.2, 0.19]}
-                position={[10, 1, -9.1]}
-                rotation={[0, 3.14159, 0]}
+                position={[8, 1, -5.6]}
+                rotation={[0, 0, 0]}
                 material={materials["Leuning"]}
+                castShadow={true}
+            />
+            <mesh
+                geometry={nodes.Cube002.geometry}
+                scale={[0.05, 0.2, 0.1745]}
+                position={[8.75, 1, -5.6]}
+                rotation={[0, 0, 0]}
+                material={materials["Material"]}
                 castShadow={true}
             />
         </group>
