@@ -28,8 +28,16 @@ import Snackautomaat from "../morgane/Snackautomaat_eetzaal";
 import Koffieautomaat from "../morgane/Koffieautomaat_eetzaal";
 import Brandslang from "../morgane/Brandslang_eetzaal";
 import Vuilbakken from "../morgane/Vuilbakken_eetzaal";
+<<<<<<< HEAD
 import Stoelen from "../morgane/Stoel_eetzaal";
 
+=======
+
+import Papierdispenser from "../yentel/papierdispenser";
+import Radiator from "../yentel/radiator";
+import Urinoir from "../yentel/urinoir";
+import VuilbakToilet from "../yentel/vuilbakToilet";
+>>>>>>> 45134a5a05957f781abaf8d6088e189bdd22192e
 
 export default (props) => {
 
@@ -67,6 +75,10 @@ export default (props) => {
       <OvaleTafels />
       <GroteTafel />
 
+	  <Papierdispenser />
+	  <Radiator />
+	  <Urinoir />
+	  <VuilbakToilet />
 
     </group>
   );
