@@ -15,10 +15,6 @@ import Rondestoel from "../indy/rondestoel";
 import MetalKast from "../indy/kabinetKast";
 import Button from "../ruben/button";
 
-
-
-
-
 import Plant from "../ruben/plant";
 import SeatGrid from "../jonas/SeatGrid";
 import OvaleTafels from "../jonas/OvaleTafels";
@@ -31,8 +27,10 @@ import Koffieautomaat from "../morgane/Koffieautomaat_eetzaal";
 import Brandslang from "../morgane/Brandslang_eetzaal";
 import Vuilbakken from "../morgane/Vuilbakken_eetzaal";
 
-
-
+import Papierdispenser from "../yentel/papierdispenser";
+import Radiator from "../yentel/radiator";
+import Urinoir from "../yentel/urinoir";
+import VuilbakToilet from "../yentel/vuilbakToilet";
 
 export default (props) => {
 
@@ -69,6 +67,10 @@ export default (props) => {
       <OvaleTafels />
       <GroteTafel />
 
+	  <Papierdispenser />
+	  <Radiator />
+	  <Urinoir />
+	  <VuilbakToilet />
 
     </group>
   );
