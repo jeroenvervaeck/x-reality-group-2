@@ -3,7 +3,7 @@ import { useBox } from "@react-three/cannon";
 import { Box } from "@react-three/drei";
 
 export default (props) => {
-  const color = '0x999999'
+  const color = new THREE.Color( 0xff0000 );
   const opacity = 0.90;
 
   const mass = 0; // kg

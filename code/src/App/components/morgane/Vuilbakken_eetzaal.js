@@ -18,6 +18,7 @@ export default () => {
           object={gltf1.scene.clone()}
 		  position={[-5.03, -2.7, -0.5]}
 		  rotation={[0, THREE.MathUtils.degToRad(180), 0]}
+		  scale={[1.4, 1.4, 1.4]}
   	  	  ref={Ref1}
   	    />
 
@@ -25,6 +26,7 @@ export default () => {
           object={gltf1.scene.clone()}
 		  position={[-17.9, -2.7, 2.5]}
 		  rotation={[0, THREE.MathUtils.degToRad(-180), 0]}
+		  scale={[1.4, 1.4, 1.4]}
   	  	  ref={Ref1}
   	    />
       </group>   
