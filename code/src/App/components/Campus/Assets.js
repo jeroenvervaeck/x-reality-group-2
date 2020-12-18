@@ -15,6 +15,7 @@ import Scanners from "../indy/scanners";
 import Rondestoel from "../indy/rondestoel";
 
 import MetalKast from "../indy/kabinetKast";
+import Button from "../ruben/button";
 
 import Plant from "../ruben/plant";
 import SeatGrid from "../jonas/SeatGrid";
@@ -27,6 +28,7 @@ import Snackautomaat from "../morgane/Snackautomaat_eetzaal";
 import Koffieautomaat from "../morgane/Koffieautomaat_eetzaal";
 import Brandslang from "../morgane/Brandslang_eetzaal";
 import Vuilbakken from "../morgane/Vuilbakken_eetzaal";
+import Stoelen from "../morgane/Stoel_eetzaal";
 
 
 export default (props) => {
@@ -34,6 +36,7 @@ export default (props) => {
 
   return (
     <group>
+      <Button />
       <BruineZitbank />
       <ZwarteZitbank />
       <LavaboAndMirror />
@@ -58,6 +61,7 @@ export default (props) => {
       <Koffieautomaat/>
       <Brandslang/>
       <Vuilbakken/>
+      <Stoelen/>
 
       <MetalKast />
       <OvaleTafels />

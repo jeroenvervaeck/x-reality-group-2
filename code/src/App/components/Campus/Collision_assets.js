@@ -3,14 +3,14 @@ import { useBox } from "@react-three/cannon";
 import { Box } from "@react-three/drei";
 
 export default (props) => {
-  const color = '0x999999'
+  const color = new THREE.Color( 0xff0000 );
   const opacity = 0.90;
 
   const mass = 0; // kg
 
   // Gelijkvloers
   const library_printers_args = [0.6, 3, 0.8];
-  const library_printers_position = [14.2, -2.3, 0.2];
+  const library_printers_position = [14.2, -2.3, 1.2];
   const library_printers_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
   const [library_printers_ref] = useBox(() => ({ ...props, mass,
     args: library_printers_args,

@@ -22,7 +22,7 @@ export default () => {
       <Physics gravity={gravity}>
 
         <Player />
-        
+   
         { true && <Collision_floor />}
         { true && <Collision_wall />}
 
