@@ -6,7 +6,7 @@ import "./styles.css";
 
 export default () => {
   return (
-    <Canvas invalidateFrameloop={false} shadowMap>
+    <Canvas invalidateFrameloop={false} shadowMap >
       <Content />
     </Canvas>
   );

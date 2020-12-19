@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { useFrame } from "react-three-fiber";
+import { useFrame, useLoader } from "react-three-fiber";
 import { useSphere } from "@react-three/cannon";
 import { PointerLockControls, Sphere } from "@react-three/drei";
 import { KeyboardControls } from "App/lib";
