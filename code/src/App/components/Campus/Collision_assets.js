@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = new THREE.Color( 0xff0000 );
-  const opacity = 0.8;
+  const opacity = 0;
 
   const mass = 0; // kg
 
@@ -195,7 +195,7 @@ export default (props) => {
     rotation: bruine_Tafels3_rotation,
     position: bruine_Tafels3_position,
   }));
-3
+
   const bruine_Tafels4_args = [2, 2, 1]; // x, y, z --> //Grootte 
   const bruine_Tafels4_position = [0.75, 0.2, -5.5]; // x, z, y  --> //position
   const bruine_Tafels4_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
@@ -203,6 +203,25 @@ export default (props) => {
     args: bruine_Tafels4_args,
     rotation: bruine_Tafels4_rotation,
     position: bruine_Tafels4_position,
+  }));
+
+  // Seat grid
+  const seat_Grid_args = [3.6, 5, 1]; // x, y, z --> //Grootte 
+  const seat_Grid_position = [10.4, 0.91, -7.4]; // x, z, y  --> //position
+  const seat_Grid_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [seat_Grid_ref] = useBox(() => ({ ...props, mass,
+    args: seat_Grid_args,
+    rotation: seat_Grid_rotation,
+    position: seat_Grid_position,
+  }));
+
+  const seat_Grid2_args = [3.6, 5, 1]; // x, y, z --> //Grootte 
+  const seat_Grid2_position = [10.4, 3.7, -7.4]; // x, z, y  --> //position
+  const seat_Grid2_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [seat_Grid2_ref] = useBox(() => ({ ...props, mass,
+    args: seat_Grid2_args,
+    rotation: seat_Grid2_rotation,
+    position: seat_Grid2_position,
   }));
   
   return ( 
@@ -283,6 +302,13 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={bruine_Tafels4_args} ref={bruine_Tafels4_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+//Seat grid
+	  <Box args={seat_Grid_args} ref={seat_Grid_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+	  <Box args={seat_Grid2_args} ref={seat_Grid2_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
     </group>
