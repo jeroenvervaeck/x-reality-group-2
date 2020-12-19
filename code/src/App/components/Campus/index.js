@@ -24,10 +24,7 @@ export default () => {
         <Player />
    
         { true && <Collision_floor />}
-        { true && <Collision_wall />}
-
-        { true && <Collision_floor />}
-        { true && <Collision_wall />}
+        { false && <Collision_wall />}
         { true && <Collision_assets />}
 
         { true && <Campus />}

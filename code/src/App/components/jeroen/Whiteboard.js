@@ -9,63 +9,119 @@ export default () => {
   const Ref1 = useRef();
   
   return (
-    <group>
-      <group>
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[-9.7, 4, -5.8]}
-		  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
-  	  	  ref={Ref1}
-  	    />
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[-9.7, 4, -7.8]}
-		  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
-  	  	  ref={Ref1}
-  	    />
-      </group>   
-      <group>
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[2.2, 4, -6.5]}
-		  rotation={[0,0,0]}
-  	  	  ref={Ref1}
-  	    />
-		<primitive
-          object={gltf.scene.clone()}
-		  position={[2.2, 4, -8.5]}
-		  rotation={[0,0,0]}
-  	  	  ref={Ref1}
-  	    />
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[10.4, 4, 2.5]}
-		  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
-  	  	  ref={Ref1}
-  	    />
-      </group>   
-      <group>
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[10.4, 4, 0.5]}
-		  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
-  	  	  ref={Ref1}
-  	    />
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[11, 4, 2.5]}
-		  rotation={[0,0,0]}
-  	  	  ref={Ref1}
-  	    />
-      </group>   
-      <group>
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[11, 4, 0.5]}
-		  rotation={[0,0,0]}
-  	  	  ref={Ref1}
-  	    />
-      </group>   
-    </group>
+	<group>  
+	{/* verdiep 2 */}
+	    <group>
+	      <group>
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[-9.7, 4, -5.8]}
+			  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
+	  	  	  ref={Ref1}
+	  	    />
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[-9.7, 4, -7.8]}
+			  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
+	  	  	  ref={Ref1}
+	  	    />
+	      </group>   
+	      <group>
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[2.2, 4, -6.5]}
+			  rotation={[0,0,0]}
+	  	  	  ref={Ref1}
+	  	    />
+			<primitive
+	          object={gltf.scene.clone()}
+			  position={[2.2, 4, -8.5]}
+			  rotation={[0,0,0]}
+	  	  	  ref={Ref1}
+	  	    />
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[10.4, 4, 2.5]}
+			  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
+	  	  	  ref={Ref1}
+	  	    />
+	      </group>   
+	      <group>
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[10.4, 4, 0.5]}
+			  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
+	  	  	  ref={Ref1}
+	  	    />
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[11, 4, 2.5]}
+			  rotation={[0,0,0]}
+	  	  	  ref={Ref1}
+	  	    />
+	      </group>   
+	      <group>
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[11, 4, 0.5]}
+			  rotation={[0,0,0]}
+	  	  	  ref={Ref1}
+	  	    />
+	      </group>   
+	    </group>
+	{/* verdiep 1 */}
+	    <group>
+	      <group>
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[-14.7, 1.4, 4.65]}
+			  rotation={[0,THREE.MathUtils.degToRad(90),0]}
+	  	  	  ref={Ref1}
+	  	    />
+	      </group>   
+	      <group>
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[2.2, 1.4, -6.5]}
+			  rotation={[0,0,0]}
+	  	  	  ref={Ref1}
+	  	    />
+			<primitive
+	          object={gltf.scene.clone()}
+			  position={[2.2, 1.4, -8.5]}
+			  rotation={[0,0,0]}
+	  	  	  ref={Ref1}
+	  	    />
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[10.4, 1.4, 2.5]}
+			  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
+	  	  	  ref={Ref1}
+	  	    />
+	      </group>   
+	      <group>
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[10.4, 1.4, 0.5]}
+			  rotation={[0,THREE.MathUtils.degToRad(-180),0]}
+	  	  	  ref={Ref1}
+	  	    />
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[11, 1.4, 2.5]}
+			  rotation={[0,0,0]}
+	  	  	  ref={Ref1}
+	  	    />
+	      </group>   
+	      <group>
+	        <primitive
+	          object={gltf.scene.clone()}
+			  position={[11, 1.4, 0.5]}
+			  rotation={[0,0,0]}
+	  	  	  ref={Ref1}
+	  	    />
+	      </group>   
+	    </group>
+	</group>
   );
 };

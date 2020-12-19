@@ -1,10 +1,9 @@
 import BruineZitbank from "../jeroen/BruineZitbank";
 import ZwarteZitbank from "../jeroen/ZwarteZitbank";
 import LavaboAndMirror from "../jeroen/LavaboAndMirror";
-
 import Whiteboard from "../jeroen/Whiteboard";
 import Beamer from "../jeroen/Beamer";
-
+import StopcontactLokaal from "../jeroen/StopcontactLokaal";
 import Bookshelve from "../indy/bookshelves";
 import StopcontactMediatheek from "../indy/stopcontactMediatheek";
 import TafelMediatheek from "../indy/tafelmediatheek";
@@ -53,6 +52,7 @@ export default (props) => {
       <Tafel_eetzaal/>
       <Beamer />
 
+
       <SeatGrid />
       <Tafel_eetzaal/>
 
@@ -71,7 +71,8 @@ export default (props) => {
   	  <Radiator />
   	  <Urinoir />
   	  <VuilbakToilet />
-
+      <StopcontactLokaal />
+      
     </group>
   );
 };
