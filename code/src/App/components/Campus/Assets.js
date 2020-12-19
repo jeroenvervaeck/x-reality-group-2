@@ -36,6 +36,7 @@ import Radiator from "../yentel/radiator";
 import Urinoir from "../yentel/urinoir";
 import VuilbakToilet from "../yentel/vuilbakToilet";
 
+import Wall from "../ruben/tentoonstelling"
 
 export default (props) => {
 
@@ -78,7 +79,7 @@ export default (props) => {
   	  <Urinoir />
   	  <VuilbakToilet />
       <StopcontactLokaal />
-      
+      <Wall />
     </group>
   );
 };
