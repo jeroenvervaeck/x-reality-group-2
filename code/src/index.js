@@ -7,7 +7,7 @@ import "./cursor.css";
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <div className="cursor"></div>
+    <div className="cursor">&#8982; </div>
   </React.StrictMode>,
   document.getElementById("root")
 );

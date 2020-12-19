@@ -11,6 +11,7 @@
   "author": "Jeroen Vervaeck",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "@react-three/cannon": "^0.5.3",
     "@react-three/drei": "^2.2.7",
     "@react-three/flex": "^0.5.2",
