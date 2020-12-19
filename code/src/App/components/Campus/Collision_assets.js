@@ -66,9 +66,20 @@ export default (props) => {
     position: library_bookshelf_2_BS_position,
   }));
 
+  // Dingingroom
+  const diningroom_TYPEHERE_args = [1, 3, 1]; // x, y, z
+  const diningroom_TYPEHERE_position = [-7, -2, -3]; // x, z, y
+  const diningroom_TYPEHERE_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_TYPEHERE_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_TYPEHERE_args,
+    rotation: diningroom_TYPEHERE_rotation,
+    position: diningroom_TYPEHERE_position,
+  }));
+
   return (
     <group>
       {/* Gelijksvloer */}
+      {/* Library */}
       <Box args={library_printers_args} ref={library_printers_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
@@ -88,6 +99,10 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={library_bookshelf_2_BS_args} ref={library_bookshelf_2_BS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      {/* Diningroom */}
+      <Box args={diningroom_TYPEHERE_args} ref={diningroom_TYPEHERE_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
     </group>
