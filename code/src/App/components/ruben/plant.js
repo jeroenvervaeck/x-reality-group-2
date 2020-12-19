@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-import glb from "./plant.glb";
+import glb from "./glb/plant.glb";
 
 export default () => {
   const gltf1 = useGLTF(glb, true);

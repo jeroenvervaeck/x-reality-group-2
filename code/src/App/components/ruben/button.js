@@ -4,7 +4,7 @@ import * as THREE from "three";
 import elevatoraudio from './sound/elevator.wav';
 
 import { useLoader, useResource } from "react-three-fiber";
-import glb from "./button.glb";
+import glb from "./glb/button.glb";
 export default () => {
   const gltf1 = useGLTF(glb, true);
   const [renderMan, setRenderMan] = useState(false);
