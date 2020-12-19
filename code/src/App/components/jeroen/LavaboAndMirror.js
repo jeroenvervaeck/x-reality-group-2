@@ -1,5 +1,9 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import * as THREE from "three";
+import { useLoader, useResource } from "react-three-fiber";
+
+import audioFile from './sounds/pouring_sink.wav'
 
 import glb_file1 from "./glb/lavaboAndMirror__jeroverv_1.glb";
 import glb_file2 from "./glb/lavaboAndMirror__jeroverv_2.glb";
@@ -17,36 +21,59 @@ export default () => {
   const Ref3 = useRef();
   const Ref4 = useRef();
 
+  const audioRef = useResource();
+
+  const audioListener = new THREE.AudioListener();
+  const audioBuffer = useLoader(THREE.AudioLoader, audioFile);
+
+   const flushToilet = () => {
+	audioRef.current.setBuffer(audioBuffer);
+	audioRef.current.setLoop(false);
+	audioRef.current.setVolume(0.1);
+	audioRef.current.play();
+  };
   
   return (
     <group>
       <group>
-        <primitive
-          object={gltf1.scene}
-          position={[-9.3, 1.2, -5.5]}
-  	  	  ref={Ref1}
-  	    />
+		<audio args={[audioListener]} ref={audioRef} />
+		<mesh onClick={() => flushToilet()}>
+			<primitive
+			object={gltf1.scene}
+			position={[-9.3, 1.2, -5.5]}
+			ref={Ref1}
+			/>
+		</mesh>
       </group>   
       <group>
-        <primitive
-          object={gltf2.scene}
-          position={[-9.3, 1.2, -6.2]}
-  	  	  ref={Ref2}
-  	    />
+	  	<audio args={[audioListener]} ref={audioRef} />
+		<mesh onClick={() => flushToilet()}>
+			<primitive
+			object={gltf2.scene}
+			position={[-9.3, 1.2, -6.2]}
+			ref={Ref2}
+			/>
+		</mesh>
       </group>   
       <group>
-        <primitive
-          object={gltf3.scene}
-          position={[-9.3, 4, -5.5]}
-  	  	  ref={Ref3}
-  	    />
+	  	<audio args={[audioListener]} ref={audioRef} />
+		<mesh onClick={() => flushToilet()}>
+			<primitive
+			object={gltf3.scene}
+			position={[-9.3, 4, -5.5]}
+			ref={Ref3}
+			/>
+		</mesh>
       </group>  
       <group>
-        <primitive
-          object={gltf4.scene}
-          position={[-9.3, 4, -6.2]}
-  	  	  ref={Ref4}
-  	    />
+	 	<audio args={[audioListener]} ref={audioRef} />
+		<mesh onClick={() => flushToilet()}>
+			<primitive
+			object={gltf4.scene}
+			position={[-9.3, 4, -6.2]}
+			ref={Ref4}
+			/>
+		</mesh>
       </group>  
     </group>
   );
