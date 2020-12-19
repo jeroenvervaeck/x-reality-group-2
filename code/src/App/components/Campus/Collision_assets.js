@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = new THREE.Color( 0xff0000 );
-  const opacity = 0.90;
+  const opacity = 0;
 
   const mass = 0; // kg
 
@@ -66,17 +66,109 @@ export default (props) => {
     position: library_bookshelf_2_BS_position,
   }));
 
-  // Dingingroom
-  const diningroom_TYPEHERE_args = [1, 3, 1]; // x, y, z
-  const diningroom_TYPEHERE_position = [-7, -2, -3]; // x, z, y
-  const diningroom_TYPEHERE_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
-  const [diningroom_TYPEHERE_ref] = useBox(() => ({ ...props, mass,
-    args: diningroom_TYPEHERE_args,
-    rotation: diningroom_TYPEHERE_rotation,
-    position: diningroom_TYPEHERE_position,
+// Diningroom
+  //Vuilbakken
+  const diningroom_Vuilbakken1_args = [1, 0.75, 1]; // x, y, z
+  const diningroom_Vuilbakken1_position = [-4.7, -2.3, 0]; // x, z, y
+  const diningroom_Vuilbakken1_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_Vuilbakken1_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_Vuilbakken1_args,
+    rotation: diningroom_Vuilbakken1_rotation,
+    position: diningroom_Vuilbakken1_position,
   }));
 
-  return (
+  const diningroom_Vuilbakken2_args = [1, 0.75, 1]; // x, y, z
+  const diningroom_Vuilbakken2_position = [-17.43, -2.3, 3]; // x, z, y
+  const diningroom_Vuilbakken2_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_Vuilbakken2_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_Vuilbakken2_args,
+    rotation: diningroom_Vuilbakken2_rotation,
+    position: diningroom_Vuilbakken2_position,
+  }));
+
+  //BS
+  const diningroom_Tafel_rij1a_args = [1, 5.55, 1]; // x, y, z --> //Grootte 
+  const diningroom_Tafel_rij1a_position = [-8.9, -2.4, -3.5]; // x, z, y  --> //position
+  const diningroom_Tafel_rij1a_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_Tafel_rij1a_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_Tafel_rij1a_args,
+    rotation: diningroom_Tafel_rij1a_rotation,
+    position: diningroom_Tafel_rij1a_position,
+  }));
+  const diningroom_Tafel_rij1b_args = [1, 2.8, 1]; // x, y, z --> //Grootte 
+  const diningroom_Tafel_rij1b_position = [-15.3, -2.4, -3.5]; // x, z, y  --> //position
+  const diningroom_Tafel_rij1b_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_Tafel_rij1b_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_Tafel_rij1b_args,
+    rotation: diningroom_Tafel_rij1b_rotation,
+    position: diningroom_Tafel_rij1b_position,
+  }));
+  //M
+  const diningroom_Tafel_rij2a_args = [1, 4.2, 1]; // x, y, z --> //Grootte 
+  const diningroom_Tafel_rij2a_position = [-9.6, -2.4, -5.5]; // x, z, y  --> //position
+  const diningroom_Tafel_rij2a_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_Tafel_rij2a_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_Tafel_rij2a_args,
+    rotation: diningroom_Tafel_rij2a_rotation,
+    position: diningroom_Tafel_rij2a_position,
+  }));
+  const diningroom_Tafel_rij2b_args = [1, 2.8, 1]; // x, y, z --> //Grootte 
+  const diningroom_Tafel_rij2b_position = [-15.3, -2.4, -5.5]; // x, z, y  --> //position
+  const diningroom_Tafel_rij2b_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_Tafel_rij2b_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_Tafel_rij2b_args,
+    rotation: diningroom_Tafel_rij2b_rotation,
+    position: diningroom_Tafel_rij2b_position,
+  }));
+
+  //FS
+    const diningroom_Tafel_rij3a_args = [1, 4.2, 1]; // x, y, z --> //Grootte 
+    const diningroom_Tafel_rij3a_position = [-9.6, -2.4, -7.95]; // x, z, y  --> //position
+    const diningroom_Tafel_rij3a_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+    const [diningroom_Tafel_rij3a_ref] = useBox(() => ({ ...props, mass,
+      args: diningroom_Tafel_rij3a_args,
+      rotation: diningroom_Tafel_rij3a_rotation,
+      position: diningroom_Tafel_rij3a_position,
+    }));
+    const diningroom_Tafel_rij3b_args = [1, 2.8, 1]; // x, y, z --> //Grootte 
+    const diningroom_Tafel_rij3b_position = [-15.3, -2.4, -7.95]; // x, z, y  --> //position
+    const diningroom_Tafel_rij3b_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+    const [diningroom_Tafel_rij3b_ref] = useBox(() => ({ ...props, mass,
+      args: diningroom_Tafel_rij3b_args,
+      rotation: diningroom_Tafel_rij3b_rotation,
+      position: diningroom_Tafel_rij3b_position,
+    }));
+
+  //Voetbaltafel
+  const diningroom_Kickertafel1_args = [0.8, 1.43, 1]; // x, y, z --> //Grootte 
+  const diningroom_Kickertafel1_position = [-5.78, -2.4, -5.92]; // x, z, y  --> //position
+  const diningroom_Kickertafel1_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_Kickertafel1_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_Kickertafel1_args,
+    rotation: diningroom_Kickertafel1_rotation,
+    position: diningroom_Kickertafel1_position,
+  }));
+
+  const diningroom_Kickertafel2_args = [0.8, 1.43, 1]; // x, y, z --> //Grootte 
+  const diningroom_Kickertafel2_position = [-5.78, -2.4, -7.35]; // x, z, y  --> //position
+  const diningroom_Kickertafel2_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_Kickertafel2_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_Kickertafel2_args,
+    rotation: diningroom_Kickertafel2_rotation,
+    position: diningroom_Kickertafel2_position,
+  }));
+
+  //Automaten
+  const diningroom_Automaten_args = [1, 3.6, 3.5]; // x, y, z --> //Grootte 
+  const diningroom_Automaten_position = [-8.3, -2.4, 1.68]; // x, z, y  --> //position
+  const diningroom_Automaten_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [diningroom_Automaten_ref] = useBox(() => ({ ...props, mass,
+    args: diningroom_Automaten_args,
+    rotation: diningroom_Automaten_rotation,
+    position: diningroom_Automaten_position,
+  }));
+
+  return ( 
     <group>
       {/* Gelijksvloer */}
       {/* Library */}
@@ -101,8 +193,46 @@ export default (props) => {
       <Box args={library_bookshelf_2_BS_args} ref={library_bookshelf_2_BS_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
-      {/* Diningroom */}
-      <Box args={diningroom_TYPEHERE_args} ref={diningroom_TYPEHERE_ref} >
+      
+{/* Diningroom */}
+//Vuilbakken
+      <Box args={diningroom_Vuilbakken1_args} ref={diningroom_Vuilbakken1_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+
+      <Box args={diningroom_Vuilbakken2_args} ref={diningroom_Vuilbakken2_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+ //Rij BS
+      <Box args={diningroom_Tafel_rij1a_args} ref={diningroom_Tafel_rij1a_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={diningroom_Tafel_rij1b_args} ref={diningroom_Tafel_rij1b_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+//Rij M
+      <Box args={diningroom_Tafel_rij2a_args} ref={diningroom_Tafel_rij2a_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={diningroom_Tafel_rij2b_args} ref={diningroom_Tafel_rij2b_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+//Rij FS
+      <Box args={diningroom_Tafel_rij3a_args} ref={diningroom_Tafel_rij3a_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={diningroom_Tafel_rij3b_args} ref={diningroom_Tafel_rij3b_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+//Kickertafel     
+      <Box args={diningroom_Kickertafel1_args} ref={diningroom_Kickertafel1_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={diningroom_Kickertafel2_args} ref={diningroom_Kickertafel2_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+//Automaten   
+      <Box args={diningroom_Automaten_args} ref={diningroom_Automaten_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
     </group>
