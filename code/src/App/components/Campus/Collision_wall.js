@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = '0x999999'
-  const opacity = 0.50;
+  const opacity = 0;
   const mass = 0; // kg
 
   const elivatorShaft_args = [1.8, 2.4, 8];

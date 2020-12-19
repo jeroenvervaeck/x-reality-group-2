@@ -11,12 +11,12 @@ export default () => {
   const gltf1 = useGLTF(glb, true);
 
   const Ref1 = useRef();
+
   const audioRef = useResource();
 
   const audioListener = new THREE.AudioListener();
   const audioBuffer = useLoader(THREE.AudioLoader, audioFile);
 
-  // function happens onClick
   const flushToilet = () => {
 	audioRef.current.setBuffer(audioBuffer);
 	audioRef.current.setLoop(false);
