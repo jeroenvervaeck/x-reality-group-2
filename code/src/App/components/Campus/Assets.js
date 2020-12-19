@@ -13,31 +13,23 @@ import Imac from "../indy/imac";
 import Windows from "../indy/windows";
 import Scanners from "../indy/scanners";
 import Rondestoel from "../indy/rondestoel";
-
 import MetalKast from "../indy/kabinetKast";
 import Button from "../ruben/button";
-
 import Plant from "../ruben/plant";
 import SeatGrid from "../jonas/SeatGrid";
 import OvaleTafels from "../jonas/OvaleTafels";
 import GroteTafel from "../jonas/GroteTafel";
-
 import Tafel_eetzaal from "../morgane/Tafels_eetzaal";
 import Kickertafel from "../morgane/Kickertafel_eetzaal";
 import Snackautomaat from "../morgane/Snackautomaat_eetzaal";
 import Koffieautomaat from "../morgane/Koffieautomaat_eetzaal";
 import Brandslang from "../morgane/Brandslang_eetzaal";
 import Vuilbakken from "../morgane/Vuilbakken_eetzaal";
-<<<<<<< HEAD
 import Stoelen from "../morgane/Stoel_eetzaal";
-
-=======
-
 import Papierdispenser from "../yentel/papierdispenser";
 import Radiator from "../yentel/radiator";
 import Urinoir from "../yentel/urinoir";
 import VuilbakToilet from "../yentel/vuilbakToilet";
->>>>>>> 45134a5a05957f781abaf8d6088e189bdd22192e
 
 export default (props) => {
 
@@ -75,10 +67,10 @@ export default (props) => {
       <OvaleTafels />
       <GroteTafel />
 
-	  <Papierdispenser />
-	  <Radiator />
-	  <Urinoir />
-	  <VuilbakToilet />
+  	  <Papierdispenser />
+  	  <Radiator />
+  	  <Urinoir />
+  	  <VuilbakToilet />
 
     </group>
   );
