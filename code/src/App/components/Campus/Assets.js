@@ -25,13 +25,14 @@ import Koffieautomaat from "../morgane/Koffieautomaat_eetzaal";
 import Brandslang from "../morgane/Brandslang_eetzaal";
 import Vuilbakken from "../morgane/Vuilbakken_eetzaal";
 import Stoelen from "../morgane/Stoel_eetzaal";
+
 import Papierdispenser from "../yentel/papierdispenser";
 import Radiator from "../yentel/radiator";
 import Urinoir from "../yentel/urinoir";
 import VuilbakToilet from "../yentel/vuilbakToilet";
 
-export default (props) => {
 
+export default (props) => {
 
   return (
     <group>
