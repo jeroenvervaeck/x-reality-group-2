@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = new THREE.Color( 0xff0000 );
-  const opacity = 0.4;
+  const opacity = 0;
 
   const mass = 0; // kg
 
