@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = new THREE.Color( 0xff0000 );
-  const opacity = 0;
+  const opacity = 0.8;
 
   const mass = 0; // kg
 
@@ -66,7 +66,7 @@ export default (props) => {
     position: library_bookshelf_2_BS_position,
   }));
 
-// Diningroom
+  // Diningroom
   //Vuilbakken
   const diningroom_Vuilbakken1_args = [1, 0.75, 1]; // x, y, z
   const diningroom_Vuilbakken1_position = [-4.7, -2.3, 0]; // x, z, y
@@ -168,6 +168,43 @@ export default (props) => {
     position: diningroom_Automaten_position,
   }));
 
+  // Bruine tafels
+  const bruine_Tafels_args = [2, 2, 1]; // x, y, z --> //Grootte 
+  const bruine_Tafels_position = [0.75, 3, -5.5]; // x, z, y  --> //position
+  const bruine_Tafels_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [bruine_Tafels_ref] = useBox(() => ({ ...props, mass,
+    args: bruine_Tafels_args,
+    rotation: bruine_Tafels_rotation,
+    position: bruine_Tafels_position,
+  }));
+
+  const bruine_Tafels2_args = [2, 2, 1]; // x, y, z --> //Grootte 
+  const bruine_Tafels2_position = [-3, 3, -5.5]; // x, z, y  --> //position
+  const bruine_Tafels2_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [bruine_Tafels2_ref] = useBox(() => ({ ...props, mass,
+    args: bruine_Tafels2_args,
+    rotation: bruine_Tafels2_rotation,
+    position: bruine_Tafels2_position,
+  }));
+
+  const bruine_Tafels3_args = [2, 2, 1]; // x, y, z --> //Grootte 
+  const bruine_Tafels3_position = [-3, 0.2, -5.5]; // x, z, y  --> //position
+  const bruine_Tafels3_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [bruine_Tafels3_ref] = useBox(() => ({ ...props, mass,
+    args: bruine_Tafels3_args,
+    rotation: bruine_Tafels3_rotation,
+    position: bruine_Tafels3_position,
+  }));
+3
+  const bruine_Tafels4_args = [2, 2, 1]; // x, y, z --> //Grootte 
+  const bruine_Tafels4_position = [0.75, 0.2, -5.5]; // x, z, y  --> //position
+  const bruine_Tafels4_rotation = [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-90)];
+  const [bruine_Tafels4_ref] = useBox(() => ({ ...props, mass,
+    args: bruine_Tafels4_args,
+    rotation: bruine_Tafels4_rotation,
+    position: bruine_Tafels4_position,
+  }));
+  
   return ( 
     <group>
       {/* Gelijksvloer */}
@@ -233,6 +270,19 @@ export default (props) => {
       </Box>
 //Automaten   
       <Box args={diningroom_Automaten_args} ref={diningroom_Automaten_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+//Broin tafels   
+	  <Box args={bruine_Tafels_args} ref={bruine_Tafels_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={bruine_Tafels2_args} ref={bruine_Tafels2_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+	  <Box args={bruine_Tafels3_args} ref={bruine_Tafels3_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={bruine_Tafels4_args} ref={bruine_Tafels4_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
     </group>

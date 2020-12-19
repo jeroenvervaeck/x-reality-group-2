@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
+import * as THREE from "three";
 import { useLoader, useResource } from "react-three-fiber";
 
 import glb from "./models/urinoir.glb";
