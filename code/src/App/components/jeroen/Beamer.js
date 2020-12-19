@@ -10,42 +10,84 @@ export default () => {
   
   return (
     <group>
+      {/* verdiep 2 */}
       <group>
-		  {/* LS */}
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[-12.7, 4.9, -5.8]}
-		  rotation={[0,THREE.MathUtils.degToRad(-90),0]}
-  	  	  ref={Ref1}
-  	    />
-      </group>   
+        <group>
+  		  {/* LS */}
+          <primitive
+            object={gltf.scene.clone()}
+  		  position={[-12.7, 4.9, -5.8]}
+  		  rotation={[0,THREE.MathUtils.degToRad(-90),0]}
+    	  	  ref={Ref1}
+    	    />
+        </group>   
+        <group>
+  		  {/* FS */}
+          <primitive
+            object={gltf.scene.clone()}
+  		  position={[5.2, 4.8, -6.5]}
+  		  rotation={[0,THREE.MathUtils.degToRad(90),0]}
+    	  	  ref={Ref1}
+    	    />
+        </group>   
+        <group>
+  		  {/* Lokaal extended */}
+          <primitive
+            object={gltf.scene.clone()}
+  		  position={[7.4, 4.9, 0.5]}
+  		  rotation={[0,THREE.MathUtils.degToRad(-90),0]}
+    	  	  ref={Ref1}
+    	    />
+        </group>   
+        <group>
+  		  {/* Lokaal Webdev */}
+          <primitive
+            object={gltf.scene.clone()}
+  		  position={[14, 4.9, 0.5]}
+  		  rotation={[0,THREE.MathUtils.degToRad(90),0]}
+    	  	  ref={Ref1}
+    	    />
+        </group>   
+      </group>
+      {/* verdiep 1 */}
       <group>
-		  {/* FS */}
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[5.2, 4.8, -6.5]}
-		  rotation={[0,THREE.MathUtils.degToRad(90),0]}
-  	  	  ref={Ref1}
-  	    />
-      </group>   
-      <group>
-		  {/* Lokaal extended */}
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[7.4, 4.9, 0.5]}
-		  rotation={[0,THREE.MathUtils.degToRad(-90),0]}
-  	  	  ref={Ref1}
-  	    />
-      </group>   
-      <group>
-		  {/* Lokaal Webdev */}
-        <primitive
-          object={gltf.scene.clone()}
-		  position={[14, 4.9, 0.5]}
-		  rotation={[0,THREE.MathUtils.degToRad(90),0]}
-  	  	  ref={Ref1}
-  	    />
-      </group>   
+        <group>
+  		  {/* LS */}
+          <primitive
+            object={gltf.scene.clone()}
+  		  position={[-14.7, 2, 2.4]}
+  		  rotation={[0,THREE.MathUtils.degToRad(180),0]}
+    	  	  ref={Ref1}
+    	    />
+        </group>   
+        <group>
+  		  {/* FS */}
+          <primitive
+            object={gltf.scene.clone()}
+  		  position={[5.2, 1.9, -6.5]}
+  		  rotation={[0,THREE.MathUtils.degToRad(90),0]}
+    	  	  ref={Ref1}
+    	    />
+        </group>   
+        <group>
+  		  {/* Lokaal extended */}
+          <primitive
+            object={gltf.scene.clone()}
+  		  position={[7.4, 2, 0.5]}
+  		  rotation={[0,THREE.MathUtils.degToRad(-90),0]}
+    	  	  ref={Ref1}
+    	    />
+        </group>   
+        <group>
+  		  {/* Lokaal Webdev */}
+          <primitive
+            object={gltf.scene.clone()}
+  		  position={[14, 2, 0.5]}
+  		  rotation={[0,THREE.MathUtils.degToRad(90),0]}
+    	  	  ref={Ref1}
+    	    />
+        </group>   
+      </group>
     </group>
   );
 };

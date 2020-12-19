@@ -25,9 +25,6 @@ export default () => {
    
         { true && <Collision_floor />}
         { true && <Collision_wall />}
-
-        { true && <Collision_floor />}
-        { true && <Collision_wall />}
         { true && <Collision_assets />}
 
         { true && <Campus />}
