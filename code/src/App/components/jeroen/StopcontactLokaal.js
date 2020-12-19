@@ -37,7 +37,7 @@ export default () => {
         <group>
           <primitive
             object={gltf.scene.clone()}
-  		      position={[12.6, 1.2, 2]}
+  		      position={[13, 1.2, 2]}
   		      rotation={[0, 0, 0]}
     	  	  ref={Ref1}
     	    />
@@ -49,12 +49,13 @@ export default () => {
     	    />
           <primitive
             object={gltf.scene.clone()}
-  		      position={[16.6, 1.2, 2]}
+  		      position={[16.2, 1.2, 2]}
   		      rotation={[0, 0, 0]}
     	  	  ref={Ref1}
     	    />
         </group>    
       </group>
+
       {/* verdiep 2 */}
       {/* lokaal Extended */}
       <group>
@@ -82,7 +83,7 @@ export default () => {
         <group>
           <primitive
             object={gltf.scene.clone()}
-  		      position={[12.6, 3.9, 2]}
+  		      position={[13, 3.9, 2]}
   		      rotation={[0, 0, 0]}
     	  	  ref={Ref1}
     	    />
@@ -94,11 +95,71 @@ export default () => {
     	    />
           <primitive
             object={gltf.scene.clone()}
-  		      position={[16.6, 3.9, 2]}
+  		      position={[16.2, 3.9, 2]}
   		      rotation={[0, 0, 0]}
     	  	  ref={Ref1}
     	    />
-        </group>    
+        </group>   
+
+
+		 {/* Programmeer lokaal */}  
+        <group>
+		//Rij2 a	
+			<primitive
+            object={gltf.scene.clone()}
+  		      position={[-16.1, 3.9, -7.5]}
+  		      rotation={[0, -1.57, 0]}
+    	  	  ref={Ref1}
+    	    />
+          <primitive
+            object={gltf.scene.clone()}
+  		      position={[-16.1, 3.9, -8.31]}
+  		      rotation={[0, 1.57, 0]}
+    	  	  ref={Ref1}
+    	    />
+		//Rij2 b
+		<primitive
+            object={gltf.scene.clone()}
+  		      position={[-13.06, 3.9, -7.5]}
+  		      rotation={[0, -1.57, 0]}
+    	  	  ref={Ref1}
+    	    />
+          <primitive
+            object={gltf.scene.clone()}
+  		      position={[-13.06, 3.9, -8.31]}
+  		      rotation={[0, 1.57, 0]}
+    	  	  ref={Ref1}
+    	    />
+
+
+//Rij2 a	
+			<primitive
+            object={gltf.scene.clone()}
+  		      position={[-16.1, 3.9, -4]}
+  		      rotation={[0, -1.57, 0]}
+    	  	  ref={Ref1}
+    	    />
+          <primitive
+            object={gltf.scene.clone()}
+  		      position={[-16.1, 3.9, -4.81]}
+  		      rotation={[0, 1.57, 0]}
+    	  	  ref={Ref1}
+    	    />
+		//Rij2 b
+		<primitive
+            object={gltf.scene.clone()}
+  		      position={[-13.06, 3.9, -4]}
+  		      rotation={[0, -1.57, 0]}
+    	  	  ref={Ref1}
+    	    />
+          <primitive
+            object={gltf.scene.clone()}
+  		      position={[-13.06, 3.9, -4.81]}
+  		      rotation={[0, 1.57, 0]}
+    	  	  ref={Ref1}
+    	    />
+
+        </group>     
       </group>
     </group>
   );
