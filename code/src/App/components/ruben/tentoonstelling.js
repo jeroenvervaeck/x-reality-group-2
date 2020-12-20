@@ -22,14 +22,13 @@ export default () => {
     <group>
 
         { renderPic &&
-        <mesh
-        position={[-4.1, 2, -6.1]}
-        rotation={[0,THREE.MathUtils.degToRad(90),0]}>
-            <planeBufferGeometry attach="geometry" args={[3, 3]} />
-            <meshBasicMaterial attach="material" map={texture} />
-
-        </mesh>
-    }
+            <mesh
+            position={[-4.1, 2, -5.75]}
+            rotation={[0,THREE.MathUtils.degToRad(90),0]}>
+                <planeBufferGeometry attach="geometry" args={[2, 2]} />
+                <meshBasicMaterial attach="material" map={texture} />
+            </mesh>
+        }
         <mesh
         onClick={() => beamerClick()}
         >
@@ -42,12 +41,12 @@ export default () => {
             />
         </mesh>
         <mesh
-    position={[1.8, 2, -5.8]}
-    rotation={[0,THREE.MathUtils.degToRad(270),0]}>
-        <planeBufferGeometry attach="geometry" args={[2.5, 1.5]} />
-        <meshBasicMaterial attach="material" map={texture2} />
+        position={[1.8, 2, -5.8]}
+        rotation={[0,THREE.MathUtils.degToRad(270),0]}>
+            <planeBufferGeometry attach="geometry" args={[2.5, 1.5]} />
+            <meshBasicMaterial attach="material" map={texture2} />
 
-    </mesh>
+        </mesh>
     </group>
     
     
