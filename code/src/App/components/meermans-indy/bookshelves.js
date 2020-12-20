@@ -29,17 +29,19 @@ export default () => {
           console.log(BookRef.current.rotation.z )
             BookRef.current.rotation.z  -= 0.01;
                 if(BookRef.current.rotation.z == endPosition){
-                  BookRef.current.rotation.z  = -1.260000000000001;
                   setActive2 (!animation2)
                   setActive (!animation)
+                  BookRef.current.rotation.z  = -1.260000000000001;
                   console.log('reee');
 
                 }
         }else if(animation2 == true){
             BookRef2.current.rotation.z  -= 0.01;
                 if(BookRef2.current.rotation.z == endPosition2){
-                  BookRef2.current.rotation.z  = -0.7300000000000004;
                   setActive2 (!animation2)
+                  BookRef2.current.rotation.z  = -0.7300000000000004;
+                  BookRef.current.rotation.z  = -1.260000000000001;
+
                   console.log('reee');
 
                 }
@@ -62,11 +64,13 @@ export default () => {
         <primitive
           object={gltf1.scene.clone()}
           position={[5, -2.6, -6.4]}
+          rotation={[0,0,0]}
   	  	  ref={BookRef}
   	    />
         <primitive
           object={gltf1.scene.clone()}
           position={[7, -2.6, -6.4]}
+          rotation={[0,0,0]}
   	  	  ref={BookRef2}
   	    />
       </group>
