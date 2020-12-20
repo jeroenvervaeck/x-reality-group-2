@@ -56,6 +56,16 @@ export default () => {
   	    />
       </group>  
 
+    {/* Tafels kot */}
+      <group>
+        <primitive
+          object={gltf1.scene.clone()}
+          position={[10.2, -1.9, -6.2]}
+  	  	  ref={Ref1}
+  	    />
+      </group>  
+
+
     </group>
   );
 };

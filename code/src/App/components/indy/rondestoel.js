@@ -9,24 +9,32 @@ export default () => {
   const Ref1 = useRef();
 
 
-    // createChairs = () => {
-    //     for (let i = 0; i < 5; i++) {
-    //         const element = array[i];
-    //         <group>
-    //             <primitive
-    //                 object={gltf1.scene.clone()}
-    //                 position={[9 + i, -2.5, -1.5]}
-    //                 scale={[0.77,0.9,0.9]}
-    //                 ref={Ref1}
-    //             />
-    //     </group>  
-            
-    //     }
-    // }
+    const createChairs = () => {
+        const copyArray = new Array(11).fill()
+        return(
+        <>
+        { copyArray.map((j, i) => {
+
+            // if (i == 0) {x = (4.3)}else{ let xX = (i +0.8); x = (4.3 + xX)}
+            let x=4.3 + (i*1.2)
+
+            return (<group>
+                        <primitive
+                            object={gltf1.scene.clone()}
+                            position={[x, -2.5,-9.2]}
+                            scale={[0.77,0.9,0.9]}
+                            rotation={[0,3.1,0]}
+                            ref={Ref1}
+                        />
+                    </group> ) }            
+            )} </>
+         ) }
 
   
   return (
     <group>
+    { true && createChairs()}
+        
     {/* Stoelen eerste stopcontacttafel */}
         {/* 1e rij */}
         <group>
