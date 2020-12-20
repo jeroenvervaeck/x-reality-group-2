@@ -16,8 +16,8 @@ import Scanners from "../indy/scanners";
 import Rondestoel from "../indy/rondestoel";
 import MetalKast from "../indy/kabinetKast";
 
-import Button from "../ruben/button";
-import Plant from "../ruben/plant";
+import Button from "../maesfranckx-ruben/button";
+import Plant from "../maesfranckx-ruben/plant";
 
 import SeatGrid from "../jonas/SeatGrid";
 import OvaleTafels from "../jonas/OvaleTafels";
@@ -36,7 +36,7 @@ import Radiator from "../yentel/radiator";
 import Urinoir from "../yentel/urinoir";
 import VuilbakToilet from "../yentel/vuilbakToilet";
 
-import Tentoonstelling from "../ruben/tentoonstelling"
+import Tentoonstelling from "../maesfranckx-ruben/tentoonstelling"
 
 export default (props) => {
 
