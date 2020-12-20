@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 
-import glb_file from "../morgane/glb/Tafels_eetzaal_morgbeka.glb";
+import glb_file from "../bekaert-morgane/glb/Tafels_eetzaal_morgbeka.glb";
 
 export default () => {
   const gltf = useGLTF(glb_file, true);

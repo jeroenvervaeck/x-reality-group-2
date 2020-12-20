@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-import campus from "../ruben/campus/campus.glb";
+import campus from "../maesfranckx-ruben/campus/campus.glb";
 
 export default () => {
   const gltf = useGLTF(campus, true);

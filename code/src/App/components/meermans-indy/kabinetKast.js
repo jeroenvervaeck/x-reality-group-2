@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-import glb from "../jonas/models/KabinetKast.glb";
+import glb from "../stasseyns-jonas/models/KabinetKast.glb";
 
 export default () => {
 

@@ -1,40 +1,40 @@
-import BruineZitbank from "../jeroen/BruineZitbank";
-import ZwarteZitbank from "../jeroen/ZwarteZitbank";
-import LavaboAndMirror from "../jeroen/LavaboAndMirror";
-import Whiteboard from "../jeroen/Whiteboard";
-import Beamer from "../jeroen/Beamer";
-import StopcontactLokaal from "../jeroen/StopcontactLokaal";
-import Tafeldocent from "../jeroen/TafelDocent";
+import BruineZitbank from "../vervaeck-jeroen/BruineZitbank";
+import ZwarteZitbank from "../vervaeck-jeroen/ZwarteZitbank";
+import LavaboAndMirror from "../vervaeck-jeroen/LavaboAndMirror";
+import Whiteboard from "../vervaeck-jeroen/Whiteboard";
+import Beamer from "../vervaeck-jeroen/Beamer";
+import StopcontactLokaal from "../vervaeck-jeroen/StopcontactLokaal";
+import Tafeldocent from "../vervaeck-jeroen/TafelDocent";
 
-import Bookshelve from "../indy/bookshelves";
-import StopcontactMediatheek from "../indy/stopcontactMediatheek";
-import TafelMediatheek from "../indy/tafelmediatheek";
-import Printer from "../indy/printer";
-import Imac from "../indy/imac";
-import Windows from "../indy/windows";
-import Scanners from "../indy/scanners";
-import Rondestoel from "../indy/rondestoel";
-import MetalKast from "../indy/kabinetKast";
+import Bookshelve from "../meermans-indy/bookshelves";
+import StopcontactMediatheek from "../meermans-indy/stopcontactMediatheek";
+import TafelMediatheek from "../meermans-indy/tafelmediatheek";
+import Printer from "../meermans-indy/printer";
+import Imac from "../meermans-indy/imac";
+import Windows from "../meermans-indy/windows";
+import Scanners from "../meermans-indy/scanners";
+import Rondestoel from "../meermans-indy/rondestoel";
+import MetalKast from "../meermans-indy/kabinetKast";
 
 import Button from "../maesfranckx-ruben/button";
 import Plant from "../maesfranckx-ruben/plant";
 
-import SeatGrid from "../jonas/SeatGrid";
-import OvaleTafels from "../jonas/OvaleTafels";
-import GroteTafel from "../jonas/GroteTafel";
+import SeatGrid from "../stasseyns-jonas/SeatGrid";
+import OvaleTafels from "../stasseyns-jonas/OvaleTafels";
+import GroteTafel from "../stasseyns-jonas/GroteTafel";
 
-import Tafel_eetzaal from "../morgane/Tafels_eetzaal";
-import Kickertafel from "../morgane/Kickertafel_eetzaal";
-import Snackautomaat from "../morgane/Snackautomaat_eetzaal";
-import Koffieautomaat from "../morgane/Koffieautomaat_eetzaal";
-import Brandslang from "../morgane/Brandslang_eetzaal";
-import Vuilbakken from "../morgane/Vuilbakken_eetzaal";
-import Stoelen from "../morgane/Stoel_eetzaal";
+import Tafel_eetzaal from "../bekaert-morgane/Tafels_eetzaal";
+import Kickertafel from "../bekaert-morgane/Kickertafel_eetzaal";
+import Snackautomaat from "../bekaert-morgane/Snackautomaat_eetzaal";
+import Koffieautomaat from "../bekaert-morgane/Koffieautomaat_eetzaal";
+import Brandslang from "../bekaert-morgane/Brandslang_eetzaal";
+import Vuilbakken from "../bekaert-morgane/Vuilbakken_eetzaal";
+import Stoelen from "../bekaert-morgane/Stoel_eetzaal";
 
-import Papierdispenser from "../yentel/papierdispenser";
-import Radiator from "../yentel/radiator";
-import Urinoir from "../yentel/urinoir";
-import VuilbakToilet from "../yentel/vuilbakToilet";
+import Papierdispenser from "../de-hauwere-yentel/papierdispenser";
+import Radiator from "../de-hauwere-yentel/radiator";
+import Urinoir from "../de-hauwere-yentel/urinoir";
+import VuilbakToilet from "../de-hauwere-yentel/vuilbakToilet";
 
 import Tentoonstelling from "../maesfranckx-ruben/tentoonstelling"
 

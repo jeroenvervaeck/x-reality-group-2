@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import img from './images/image1.jpg'
 import img2 from './images/image2.png'
-import glb from "../jeroen/glb/beamer__jeroverv.glb";
+import glb from "../vervaeck-jeroen/glb/beamer__jeroverv.glb";
 import { useLoader, useResource } from "react-three-fiber";
 
 export default () => {
