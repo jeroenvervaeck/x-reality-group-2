@@ -10,11 +10,17 @@ export default () => {
   const gltf2 = useGLTF(button, true);
 
   const BookRef = useRef();
+  const BookRef2 = useRef();
+
   const Ref1 = useRef();
   const Ref2 = useRef();
 
   const [animation, setActive] = useState(false);
-  const endPosition = [20, -2.6, -6.4];
+  const [animation2, setActive2] = useState(false);
+
+  const endPosition = -1.260000000000001;
+  const endPosition2 = -0.7300000000000004;
+
   const begin =   [5, -2.6, -6.4];
 
 
@@ -22,19 +28,28 @@ export default () => {
         if(animation == true){
           console.log(BookRef.current.rotation.z )
             BookRef.current.rotation.z  -= 0.01;
-                if(BookRef.current.rotation.z > endPosition[1]){
-                   // carRef.current.position.x  += 0.035;
-                   setActive (!animation)
+                if(BookRef.current.rotation.z == endPosition){
+                  BookRef.current.rotation.z  = -1.260000000000001;
+                  setActive2 (!animation2)
+                  setActive (!animation)
+                  console.log('reee');
 
-                    console.log(BookRef.current.rotation);
+                }
+        }else if(animation2 == true){
+            BookRef2.current.rotation.z  -= 0.01;
+                if(BookRef2.current.rotation.z == endPosition2){
+                  BookRef2.current.rotation.z  = -0.7300000000000004;
+                  setActive2 (!animation2)
+                  console.log('reee');
 
                 }
         }
     });
 
-
+  
   return (
-    <group>s
+    <group>
+      <group>
         <primitive
           object={gltf2.scene}
           position={[8.1, -1.6, -3.6]}
@@ -43,28 +58,29 @@ export default () => {
           onClick={  e => setActive (!animation) }
   	  	  ref={Ref2}
   	    />
-
+   
         <primitive
-          object={gltf1.scene}
+          object={gltf1.scene.clone()}
           position={[5, -2.6, -6.4]}
-          rotation={[0,0,0]}
   	  	  ref={BookRef}
   	    />
-       <group>
-{/*
         <primitive
           object={gltf1.scene.clone()}
           position={[7, -2.6, -6.4]}
-  	  	  ref={BookRef}
+  	  	  ref={BookRef2}
   	    />
+      </group>
+      <group>
 
-
+   
+ 
+   
         <primitive
           object={gltf1.scene.clone()}
           position={[13.3, -2.6, -6.4]}
-  	  	  ref={BookRef}
-  	    /> */}
-
+  	  	  ref={Ref1}
+  	    />
+  
 
 
         <primitive
@@ -72,7 +88,7 @@ export default () => {
           position={[15.3, -2.6, -6.4]}
   	  	  ref={Ref1}
   	    />
-      </group>
+      </group>  
 
     {/* Boeken muur */}
       <group>
@@ -82,7 +98,7 @@ export default () => {
           rotation={[0,1.57,0]}
   	  	  ref={Ref1}
   	    />
-      </group>
+      </group>  
       <group>
         <primitive
           object={gltf1.scene.clone()}
@@ -90,7 +106,7 @@ export default () => {
           rotation={[0,1.57,0]}
   	  	  ref={Ref1}
   	    />
-      </group>
+      </group>  
 
     </group>
   );
