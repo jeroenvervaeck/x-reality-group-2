@@ -14,7 +14,7 @@ export default () => {
   const [animationback, setActive2] = useState(false);
 
   const endPosition = -0.3000000000000013  ;
-  const beginPosition = 1.5
+  const beginPosition = 0.6499999999999992;
   const [renderMan, setRenderMan] = useState(false);
   const Ref1 = useRef();
   const Ref2 = useRef();
@@ -78,7 +78,7 @@ export default () => {
           </mesh>
             <primitive
             object={gltf1_person.scene}
-            position={[-1, -1.56, 1.5]}
+            position={[-1, -1.56, 0.6499999999999992]}
             rotation={[0,1.55,0]}
             scale={[0.16,0.16,0.16]}
 
