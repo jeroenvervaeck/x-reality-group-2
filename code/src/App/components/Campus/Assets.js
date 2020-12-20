@@ -16,6 +16,8 @@ import Scanners from "../meermans-indy/scanners";
 import Rondestoel from "../meermans-indy/rondestoel";
 import MetalKast from "../meermans-indy/kabinetKast";
 import Images from "../meermans-indy/images";
+import Car from "../meermans-indy/car";
+
 
 import Button from "../maesfranckx-ruben/button";
 import Plant from "../maesfranckx-ruben/plant";
@@ -85,6 +87,8 @@ export default (props) => {
       <StopcontactLokaal />
       <Tentoonstelling />
       <Images />
+      <Car />
+
 
     </group>
   );
