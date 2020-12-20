@@ -23,9 +23,9 @@ export default () => {
 
         { renderPic &&
             <mesh
-            position={[-4.1, 2, -6.1]}
+            position={[-4.1, 2, -5.75]}
             rotation={[0,THREE.MathUtils.degToRad(90),0]}>
-                <planeBufferGeometry attach="geometry" args={[3, 3]} />
+                <planeBufferGeometry attach="geometry" args={[2, 2]} />
                 <meshBasicMaterial attach="material" map={texture} />
             </mesh>
         }
