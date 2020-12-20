@@ -22,14 +22,14 @@ export default () => {
         if(animation == true){
           console.log(BookRef.current.position.z )
             BookRef.current.position.z  += 0.01;
-                if(Ref1.current.position.z > endPosition[2]){
-                   // carRef.current.position.x  += 0.035;
-                   setActive (!animation)
+                // if(Ref1.current.position.z > endPosition[2]){
+                //    // carRef.current.position.x  += 0.035;
+                //    setActive (!animation)
 
-                    Ref1.current.position.set(0,0.71,0) ;
-                    console.log(Ref1.current.position);
+                //     Ref1.current.position.set(0,0.71,0) ;
+                //     console.log(Ref1.current.position);
 
-                }
+                // }
         }
     });
 
@@ -47,7 +47,7 @@ export default () => {
    
         <primitive
           object={gltf1.scene}
-          position={animation ?  [5, -2.6, -6.4] : begin}
+          position={[5, -2.6, -7]}
   	  	  ref={BookRef}
   	    />
        <group>
