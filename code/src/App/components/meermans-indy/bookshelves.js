@@ -15,6 +15,9 @@ export default () => {
   const Ref1 = useRef();
   const Ref2 = useRef();
 
+  const buttonClick = () => {
+    setActive (!animation)
+  }
   const [animation, setActive] = useState(false);
   const [animation2, setActive2] = useState(false);
 
@@ -47,14 +50,17 @@ export default () => {
   return (
     <group>
       <group>
-        <primitive
-          object={gltf2.scene}
-          position={[8.1, -1.6, -3.6]}
-          rotation={[0,0,0]}
-          scale={[0.5,0.5,0.5]}
-          onClick={  e => setActive (!animation) }
-  	  	  ref={Ref2}
-  	    />
+        <mesh
+        onClick={() => buttonClick()}
+        >
+          <primitive
+            object={gltf2.scene}
+            position={[8.1, -1.6, -3.6]}
+            rotation={[0,0,0]}
+            scale={[0.5,0.5,0.5]}
+            ref={Ref2}
+          />
+        </mesh>
    
         <primitive
           object={gltf1.scene.clone()}
