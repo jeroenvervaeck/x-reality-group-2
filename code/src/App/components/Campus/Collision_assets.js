@@ -4,7 +4,7 @@ import { Box } from "@react-three/drei";
 
 export default (props) => {
   const color = new THREE.Color( 0xff0000 );
-  const opacity = 0;
+  const opacity = 0.8;
 
   const mass = 0; // kg
 
@@ -65,6 +65,26 @@ export default (props) => {
     rotation: library_bookshelf_2_BS_rotation,
     position: library_bookshelf_2_BS_position,
   }));
+
+  // Kabinetkast
+  const library_kabinet_args = [0.6, 5, 5];
+  const library_kabinet_position = [2.65, -2.7, 2.3];
+  const library_kabinet_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+  const [library_kabinet_ref] = useBox(() => ({ ...props, mass,
+    args: library_kabinet_args,
+    rotation: library_kabinet_rotation,
+    position: library_kabinet_position,
+  }));
+
+   // Tafel kot
+   const library_tafel_kot_args = [1, 1, 0.7];
+   const library_tafel_kot_position = [10.2, -2, -6.2];
+   const library_tafel_kot_rotation = [THREE.MathUtils.degToRad(-90), 0, 0];
+   const [library_tafel_kot_ref] = useBox(() => ({ ...props, mass,
+	 args: library_tafel_kot_args,
+	 rotation: library_tafel_kot_rotation,
+	 position: library_tafel_kot_position,
+   }));
 
   // Diningroom
   //Vuilbakken
@@ -247,6 +267,12 @@ export default (props) => {
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       <Box args={library_bookshelf_2_BS_args} ref={library_bookshelf_2_BS_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={library_kabinet_args} ref={library_kabinet_ref} >
+        <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
+      </Box>
+      <Box args={library_tafel_kot_args} ref={library_tafel_kot_ref} >
         <meshBasicMaterial color={color} opacity={opacity} transparent={true} side={THREE.DoubleSide} />
       </Box>
       

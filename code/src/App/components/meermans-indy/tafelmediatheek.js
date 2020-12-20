@@ -8,9 +8,6 @@ export default () => {
   const gltf1 = useGLTF(glb, true);
 
   const Ref1 = useRef();
-
-
-
   
   return (
     <group>
