@@ -15,9 +15,13 @@ import Windows from "../meermans-indy/windows";
 import Scanners from "../meermans-indy/scanners";
 import Rondestoel from "../meermans-indy/rondestoel";
 import MetalKast from "../meermans-indy/kabinetKast";
+import Images from "../meermans-indy/images";
+
 
 import Button from "../maesfranckx-ruben/button";
 import Plant from "../maesfranckx-ruben/plant";
+import Tentoonstelling from "../maesfranckx-ruben/tentoonstelling"
+
 
 import SeatGrid from "../stasseyns-jonas/SeatGrid";
 import OvaleTafels from "../stasseyns-jonas/OvaleTafels";
@@ -36,7 +40,6 @@ import Radiator from "../de-hauwere-yentel/radiator";
 import Urinoir from "../de-hauwere-yentel/urinoir";
 import VuilbakToilet from "../de-hauwere-yentel/vuilbakToilet";
 
-import Tentoonstelling from "../maesfranckx-ruben/tentoonstelling"
 import ToiletStall from "../stasseyns-jonas/ToiletStall";
 
 export default (props) => {
@@ -82,6 +85,8 @@ export default (props) => {
   	  <VuilbakToilet />
       <StopcontactLokaal />
       <Tentoonstelling />
+      <Images />
+
     </group>
   );
 };
