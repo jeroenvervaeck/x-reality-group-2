@@ -17,15 +17,15 @@ import Rondestoel from "../meermans-indy/rondestoel";
 import MetalKast from "../meermans-indy/kabinetKast";
 import Images from "../meermans-indy/images";
 
-
 import Button from "../maesfranckx-ruben/button";
 import Plant from "../maesfranckx-ruben/plant";
 import Tentoonstelling from "../maesfranckx-ruben/tentoonstelling"
 
-
 import SeatGrid from "../stasseyns-jonas/SeatGrid";
 import OvaleTafels from "../stasseyns-jonas/OvaleTafels";
 import GroteTafel from "../stasseyns-jonas/GroteTafel";
+import ToiletStall from "../stasseyns-jonas/ToiletStall";
+import ClassRoomChairs from "../stasseyns-jonas/ClassRoomChairs";
 
 import Tafel_eetzaal from "../bekaert-morgane/Tafels_eetzaal";
 import Kickertafel from "../bekaert-morgane/Kickertafel_eetzaal";
@@ -39,8 +39,6 @@ import Papierdispenser from "../de-hauwere-yentel/papierdispenser";
 import Radiator from "../de-hauwere-yentel/radiator";
 import Urinoir from "../de-hauwere-yentel/urinoir";
 import VuilbakToilet from "../de-hauwere-yentel/vuilbakToilet";
-
-import ToiletStall from "../stasseyns-jonas/ToiletStall";
 
 export default (props) => {
 
@@ -67,6 +65,7 @@ export default (props) => {
       <SeatGrid />
       <Tafel_eetzaal/>
       <ToiletStall/>
+      <ClassRoomChairs />
 
       <Kickertafel/>
       <Snackautomaat/>

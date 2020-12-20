@@ -6,8 +6,8 @@ import modelPath from "./models/GroteTafel.glb";
 export default () => {
     const {nodes, materials} = useGLTF(modelPath, true);
 
-    console.log("Nodes:", nodes);
-    console.log("Materials:", materials);
+    // console.log("Nodes:", nodes);
+    // console.log("Materials:", materials);
 
     return (
         <group>
