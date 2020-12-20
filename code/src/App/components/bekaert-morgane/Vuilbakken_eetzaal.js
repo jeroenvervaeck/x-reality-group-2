@@ -22,13 +22,23 @@ export default () => {
   	  	  ref={Ref1}
   	    />
 
-<primitive
+		<primitive
           object={gltf1.scene.clone()}
 		  position={[-17.9, -2.7, 2.5]}
 		  rotation={[0, THREE.MathUtils.degToRad(-180), 0]}
 		  scale={[1.4, 1.4, 1.4]}
   	  	  ref={Ref1}
   	    />
+      </group>  
+	  	  <group>
+        <primitive
+          object={gltf1.scene.clone()}
+		  position={[17.43, -2.7, -0.1]}
+		  rotation={[0, THREE.MathUtils.degToRad(180), 0]}
+		  scale={[0.9, 1.3, 2.2]}
+  	  	  ref={Ref1}
+  	    />
+
       </group>   
     </group>
   );
