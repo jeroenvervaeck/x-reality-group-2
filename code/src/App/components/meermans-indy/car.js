@@ -35,88 +35,90 @@ export default () => {
     <group>
         <primitive
           object={gltf1.scene}
-          position={[14.3, -1.3, -20.3]}
-          rotation={[0,-1.55,0]}
-          scale={[0.95,0.95,0.95]}
+          position={[10.3, -0.8, -21.3]}
+          rotation={[0,-0.65,0]}
+          scale={[1.55,1.55,1.55]}
   	  	  ref={Ref1}
   	    />
         <primitive
           object={gltf2.scene}
-          position={[20.3, -1.7, -20.3]}
-          rotation={[0,-1.55,0]}
-          scale={[0.6,0.6,0.6]}
+          position={[7.3, -1.9, -23.3]}
+          rotation={[0,-0.5,0]}
+          scale={[0.53,0.6,0.6]}
   	  	  ref={Ref1}
   	    />
         <primitive
           object={gltf3.scene}
-          position={[9.3, -0.9, -20.3]}
-          rotation={[0,-1.55,0]}
+          position={[4.3, -0.9, -24.3]}
+          rotation={[0,-0.2,0]}
           scale={[0.95,0.95,0.95]}
   	  	  ref={Ref1}
   	    />
         <primitive
           object={gltf4.scene}
-          position={[1.3, -1.9, -20.3]}
-          rotation={[0,-1.55,0]}
+          position={[-0.3, -1.9, -23.3]}
+          rotation={[0,-0,0]}
           scale={[0.95,0.95,0.95]}
   	  	  ref={Ref1}
   	    />
         <primitive
           object={gltf5.scene}
-          position={[-6.3, -1.9, -20.3]}
-          rotation={[0,-1.55,0]}
-          scale={[0.95,0.95,0.95]}
+          position={[-6.5, -2.61, -24.3]}
+          rotation={[0,0.4,0]}
+          scale={[2.3,2.3,2.3]}
   	  	  ref={Ref1}
   	    />
         <group
-          position = {[-10.3, -1.4, -20.3]}
+          position = {[-10.3, -1.63, -20.3]}
+          scale= {[0.5,0.5,0.5]}
+          rotation={[0,-0.7,0]}
         >
-      <mesh OnClick={() => setNight(isnight)}
-        geometry={nodes.Cube.geometry}
-        material={materials["yellow"]}
-        scale={[1, 0.774, 0.738]}
-        position={[0, -0.77579, 0]}
-        ref={gltf6}
-      />
-      <mesh OnClick={() => setNight(isnight)}
-        geometry={nodes.cube1.geometry}
-        material={materials["red"]}
-        scale={[1,0.773, 0.736]}
-        position={[-2.0015, -0.77579, 0]}
-        ref={gltf6}
-      />
-      <mesh OnClick={() => setNight(isnight)}
-        geometry={nodes.cube3.geometry}
-        material={materials["Material"]}
-        scale={[0.105, 0.20, 0.8523]}
-        position={[-1.187, 0.1732, -0.3]}
-        ref={gltf6}
-      />
-      <mesh OnClick={() => setNight(isnight)}
-        geometry={nodes.Cylinder.geometry}
-        material={materials["black"]}
-        scale={[0.7, 0.15, 0.7]}
-        position={[0.10, -1.3, 1]}
-        rotation={[THREE.MathUtils.degToRad(90), 0, 0]}
-        ref={gltf6}
-      />
-      <mesh OnClick={() => setNight(isnight)}
-        geometry={nodes.cyl1.geometry}
-        material={materials["black"]}
-        scale={[0.7, 0.15, 0.7]}
-        position={[-3.10, -1.3, 1]}
-        rotation={[THREE.MathUtils.degToRad(90), 0, 0]}
-        ref={gltf6}
-      />
-      <mesh OnClick={() => setNight(isnight)}
-        geometry={nodes.cube2.geometry}
-        material={materials["Material"]}
-        scale={[1, 0.244, 0.104]}
-        position={[-0.72, -0.47112, -0.11825]}
-        ref={gltf6}
-      />
-      
-      </group>
+            <mesh 
+                geometry={nodes.Cube.geometry}
+                material={materials["yellow"]}
+                scale={[1, 0.774, 0.738]}
+                position={[0, -0.77579, 0]}
+                ref={gltf6}
+            />
+            <mesh 
+                geometry={nodes.cube1.geometry}
+                material={materials["red"]}
+                scale={[1,0.773, 0.736]}
+                position={[-2.0015, -0.77579, 0]}
+                ref={gltf6}
+            />
+            <mesh 
+                geometry={nodes.cube3.geometry}
+                material={materials["Material"]}
+                scale={[0.105, 0.20, 0.8523]}
+                position={[-1.187, 0.1732, -0.3]}
+                ref={gltf6}
+            />
+            <mesh 
+                geometry={nodes.Cylinder.geometry}
+                material={materials["black"]}
+                scale={[0.7, 0.15, 0.7]}
+                position={[0.10, -1.3, 1]}
+                rotation={[THREE.MathUtils.degToRad(90), 0, 0]}
+                ref={gltf6}
+            />
+            <mesh 
+                geometry={nodes.cyl1.geometry}
+                material={materials["black"]}
+                scale={[0.7, 0.15, 0.7]}
+                position={[-3.10, -1.3, 1]}
+                rotation={[THREE.MathUtils.degToRad(90), 0, 0]}
+                ref={gltf6}
+            />
+            <mesh
+                geometry={nodes.cube2.geometry}
+                material={materials["Material"]}
+                scale={[1, 0.244, 0.104]}
+                position={[-0.72, -0.47112, -0.11825]}
+                ref={gltf6}
+            />
+            
+            </group>
       </group>  
 
     </group>

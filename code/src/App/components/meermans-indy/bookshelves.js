@@ -21,8 +21,6 @@ export default () => {
   const endPosition = -1.260000000000001;
   const endPosition2 = -0.7300000000000004;
 
-  const begin =   [5, -2.6, -6.4];
-
 
   useFrame(() => {
         if(animation == true){
@@ -32,7 +30,6 @@ export default () => {
                   setActive2 (!animation2)
                   setActive (!animation)
                   BookRef.current.rotation.z  = -1.260000000000001;
-                  console.log('reee');
 
                 }
         }else if(animation2 == true){
@@ -41,8 +38,6 @@ export default () => {
                   setActive2 (!animation2)
                   BookRef2.current.rotation.z  = -0.7300000000000004;
                   BookRef.current.rotation.z  = -1.260000000000001;
-
-                  console.log('reee');
 
                 }
         }
