@@ -10,6 +10,7 @@ export default () => {
     // console.log("Materials:", materials);
 
     const firstFloorY = 0.6
+    const secondFloorY = 3.3
 
     return (
         <group>
@@ -180,6 +181,224 @@ export default () => {
                 object={nodes.Scene.clone()}
                 position={[3.3, firstFloorY, 2.95]}
                 rotation={[0, 1.5707, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+
+
+
+
+
+
+            <primitive // B24
+                object={nodes.Scene.clone()}
+                position={[-12.1, secondFloorY, -5.2]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-12.75, secondFloorY, -5.2]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-13.4, secondFloorY, -5.2]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-14.05, secondFloorY, -5.2]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+
+            <primitive // B24
+                object={nodes.Scene.clone()}
+                position={[-15.2, secondFloorY, -5.2]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-15.85, secondFloorY, -5.2]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-16.5, secondFloorY, -5.2]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-17.15, secondFloorY, -5.2]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+
+
+
+            <primitive // B24
+                object={nodes.Scene.clone()}
+                position={[-12.1, secondFloorY, -8.7]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-12.75, secondFloorY, -8.7]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-13.4, secondFloorY, -8.7]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-14.05, secondFloorY, -8.7]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+
+            <primitive // B24
+                object={nodes.Scene.clone()}
+                position={[-15.2, secondFloorY, -8.7]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-15.85, secondFloorY, -8.7]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-16.5, secondFloorY, -8.7]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-17.15, secondFloorY, -8.7]}
+                rotation={[0, 0, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+
+
+
+            <primitive // B24
+                object={nodes.Scene.clone()}
+                position={[-12.1, secondFloorY, -3.6]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-12.75, secondFloorY, -3.6]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-13.4, secondFloorY, -3.6]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-14.05, secondFloorY, -3.6]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+
+            <primitive // B24
+                object={nodes.Scene.clone()}
+                position={[-15.2, secondFloorY, -3.6]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-15.85, secondFloorY, -3.6]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-16.5, secondFloorY, -3.6]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-17.15, secondFloorY, -3.6]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+
+
+
+            <primitive // B24
+                object={nodes.Scene.clone()}
+                position={[-12.1, secondFloorY, -7.1]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-12.75, secondFloorY, -7.1]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-13.4, secondFloorY, -7.1]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-14.05, secondFloorY, -7.1]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+
+            <primitive // B24
+                object={nodes.Scene.clone()}
+                position={[-15.2, secondFloorY, -7.1]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-15.85, secondFloorY, -7.1]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-16.5, secondFloorY, -7.1]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+            <primitive
+                object={nodes.Scene.clone()}
+                position={[-17.15, secondFloorY, -7.1]}
+                rotation={[0, 3.142, 0]}
+                scale={[0.77, 0.9, 0.9]}
+            />
+
+            <primitive // B24 Lecturer
+                object={nodes.Scene.clone()}
+                position={[-10.2, secondFloorY, -9]}
+                rotation={[0, -1.5707, 0]}
                 scale={[0.77, 0.9, 0.9]}
             />
         </group>
