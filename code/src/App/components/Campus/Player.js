@@ -26,7 +26,7 @@ export default (props) => {
   }));
 
   useEffect(() => {
-    console.info("useEffect: KeyboardControls");
+    // console.info("useEffect: KeyboardControls");
     KeyboardControls.addEventListeners();
     // KeyboardControls.setKeyboardAzerty();
 

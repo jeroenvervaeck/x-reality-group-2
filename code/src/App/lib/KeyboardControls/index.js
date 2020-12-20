@@ -35,7 +35,7 @@ class KeyboardControls {
   }
 
   static keyDownHandler(event) {
-    console.log("KeyboardControls: keyDownHandler", `'${event.code}'`);
+   // console.log("KeyboardControls: keyDownHandler", `'${event.code}'`);
     switch (event.code) {
       case "ArrowDown":
       case "KeyS":
@@ -63,7 +63,7 @@ class KeyboardControls {
   }
 
   static keyUpHandler(event) {
-    console.log("KeyboardControls: keyUpHandler", `'${event.code}'`);
+   // console.log("KeyboardControls: keyUpHandler", `'${event.code}'`);
     switch (event.code) {
       case "ArrowDown":
       case "ArrowUp":
@@ -85,19 +85,19 @@ class KeyboardControls {
   }
 
   static addEventListeners() {
-    console.info("KeyboardControls: addEventListeners");
+   // console.info("KeyboardControls: addEventListeners");
     window.addEventListener("keydown", this.keyDownHandler);
     window.addEventListener("keyup", this.keyUpHandler);
   }
 
   static removeEventListeners() {
-    console.info("KeyboardControls: removeEventListeners");
+    //console.info("KeyboardControls: removeEventListeners");
     window.removeEventListener("keydown", this.keyDownHandler);
     window.removeEventListener("keyup", this.keyUpHandler);
   }
 
   static setKeyboardAzerty() {
-    console.log(this.#keyboard);
+    //console.log(this.#keyboard);
     this.#keyboard = AZERTY;
     console.log(this.#keyboard);
   }

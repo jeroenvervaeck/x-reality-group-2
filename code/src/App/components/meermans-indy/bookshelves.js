@@ -20,16 +20,15 @@ export default () => {
 
   useFrame(() => {
         if(animation == true){
-          console.log(BookRef.current.position.z )
-            BookRef.current.position.z  += 0.01;
-                // if(Ref1.current.position.z > endPosition[2]){
-                //    // carRef.current.position.x  += 0.035;
-                //    setActive (!animation)
+          console.log(BookRef.current.rotation.z )
+            BookRef.current.rotation.z  -= 0.01;
+                if(BookRef.current.rotation.z > endPosition[1]){
+                   // carRef.current.position.x  += 0.035;
+                   setActive (!animation)
 
-                //     Ref1.current.position.set(0,0.71,0) ;
-                //     console.log(Ref1.current.position);
+                    console.log(BookRef.current.rotation);
 
-                // }
+                }
         }
     });
 
@@ -47,11 +46,12 @@ export default () => {
    
         <primitive
           object={gltf1.scene}
-          position={[5, -2.6, -7]}
+          position={[5, -2.6, -6.4]}
+          rotation={[0,0,0]}
   	  	  ref={BookRef}
   	    />
        <group>
-
+{/* 
         <primitive
           object={gltf1.scene.clone()}
           position={[7, -2.6, -6.4]}
@@ -63,7 +63,7 @@ export default () => {
           object={gltf1.scene.clone()}
           position={[13.3, -2.6, -6.4]}
   	  	  ref={BookRef}
-  	    />
+  	    /> */}
   
 
 
