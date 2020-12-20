@@ -40,6 +40,7 @@ import Radiator from "../de-hauwere-yentel/radiator";
 import Urinoir from "../de-hauwere-yentel/urinoir";
 import VuilbakToilet from "../de-hauwere-yentel/vuilbakToilet";
 
+import ToiletStall from "../stasseyns-jonas/ToiletStall";
 
 export default (props) => {
 
@@ -65,6 +66,7 @@ export default (props) => {
 
       <SeatGrid />
       <Tafel_eetzaal/>
+      <ToiletStall/>
 
       <Kickertafel/>
       <Snackautomaat/>
