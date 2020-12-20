@@ -32,9 +32,9 @@ export default () => {
         }
     });
 
-  
+
   return (
-    <group>
+    <group>s
         <primitive
           object={gltf2.scene}
           position={[8.1, -1.6, -3.6]}
@@ -43,7 +43,7 @@ export default () => {
           onClick={  e => setActive (!animation) }
   	  	  ref={Ref2}
   	    />
-   
+
         <primitive
           object={gltf1.scene}
           position={[5, -2.6, -6.4]}
@@ -51,20 +51,20 @@ export default () => {
   	  	  ref={BookRef}
   	    />
        <group>
-{/* 
+{/*
         <primitive
           object={gltf1.scene.clone()}
           position={[7, -2.6, -6.4]}
   	  	  ref={BookRef}
   	    />
- 
-   
+
+
         <primitive
           object={gltf1.scene.clone()}
           position={[13.3, -2.6, -6.4]}
   	  	  ref={BookRef}
   	    /> */}
-  
+
 
 
         <primitive
@@ -72,7 +72,7 @@ export default () => {
           position={[15.3, -2.6, -6.4]}
   	  	  ref={Ref1}
   	    />
-      </group>  
+      </group>
 
     {/* Boeken muur */}
       <group>
@@ -82,7 +82,7 @@ export default () => {
           rotation={[0,1.57,0]}
   	  	  ref={Ref1}
   	    />
-      </group>  
+      </group>
       <group>
         <primitive
           object={gltf1.scene.clone()}
@@ -90,7 +90,7 @@ export default () => {
           rotation={[0,1.57,0]}
   	  	  ref={Ref1}
   	    />
-      </group>  
+      </group>
 
     </group>
   );
