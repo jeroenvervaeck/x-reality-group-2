@@ -115,13 +115,7 @@ export default () => {
         position={[-0.72, -0.47112, -0.11825]}
         ref={gltf6}
       />
-      <mesh OnClick={() => setNight(isnight)}
-        geometry={nodes.Plane.geometry}
-        material={materials["Material.001"]}
-        scale={[10,10,10]}
-        position={[0, -2, 0]}
-        ref={gltf6}
-      />
+      
       </group>
       </group>  
 
