@@ -41,6 +41,7 @@ import Papierdispenser from "../de-hauwere-yentel/papierdispenser";
 import Radiator from "../de-hauwere-yentel/radiator";
 import Urinoir from "../de-hauwere-yentel/urinoir";
 import VuilbakToilet from "../de-hauwere-yentel/vuilbakToilet";
+import ImagesYentel from "../de-hauwere-yentel/images";
 
 export default (props) => {
 
@@ -84,6 +85,7 @@ export default (props) => {
   	  <Radiator />
   	  <Urinoir />
   	  <VuilbakToilet />
+      <ImagesYentel />
       <StopcontactLokaal />
       <Tentoonstelling />
       <Images />
