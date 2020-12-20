@@ -26,38 +26,31 @@ export default () => {
       audioRef.current.play();
     }
   };
-  
-
   return (
     <group>
-    
-    <group>
-    <audio args={[audioListener]} ref={audioRef} />
-      <mesh
-      onClick={() => buttonClick()}
-      >
-        <primitive
-          object={gltf1.scene.clone()}
-          position={[-1.77, -1.56, 0.31]}
-          rotation={[0,-1.55,0]}
-          scale={[1,1,1]}
-  	  	  ref={Ref1}
-  	    />
-      </mesh>
-      { renderMan && 
+      <group>
+      <audio args={[audioListener]} ref={audioRef} />
+        <mesh
+          onClick={() => buttonClick()}
+        >
           <primitive
-          object={gltf1_person.scene}
-          position={[-1, -1.56, 0.01]}
-          rotation={[0,1.55,0]}
-          scale={[0.16,0.16,0.16]}
-  	  	  ref={Ref2}
-    	    />
-        }
-    </group>  
-      
-
-      
-
+            object={gltf1.scene.clone()}
+            position={[-1.77, -1.56, 0.31]}
+            rotation={[0,-1.55,0]}
+            scale={[1,1,1]}
+            ref={Ref1}
+          />
+        </mesh>
+        { renderMan && 
+            <primitive
+            object={gltf1_person.scene}
+            position={[-1, -1.56, 0.01]}
+            rotation={[0,1.55,0]}
+            scale={[0.16,0.16,0.16]}
+            ref={Ref2}
+            />
+          }
+      </group>  
     </group>
   );
 };
