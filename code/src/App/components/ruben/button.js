@@ -5,10 +5,14 @@ import elevatoraudio from './sound/elevator.wav';
 
 import { useLoader, useResource } from "react-three-fiber";
 import glb from "./glb/button.glb";
+import glb_person from './glb/person.glb'
 export default () => {
   const gltf1 = useGLTF(glb, true);
+  const gltf1_person = useGLTF(glb_person, true);
+
   const [renderMan, setRenderMan] = useState(false);
   const Ref1 = useRef();
+  const Ref2 = useRef();
   const audioRef = useResource();
   const audioListener = new THREE.AudioListener();
   const audioBuffer = useLoader(THREE.AudioLoader, elevatoraudio);
@@ -42,11 +46,11 @@ export default () => {
       </mesh>
       { renderMan && 
           <primitive
-          object={gltf1.scene.clone()}
-          position={[-1.77, -1.56, 0.31]}
-          rotation={[0,-1.55,0]}
-          scale={[3,3,3]}
-  	  	  ref={Ref1}
+          object={gltf1_person.scene}
+          position={[-1, -1.56, 0.01]}
+          rotation={[0,1.55,0]}
+          scale={[0.16,0.16,0.16]}
+  	  	  ref={Ref2}
     	    />
         }
     </group>  
